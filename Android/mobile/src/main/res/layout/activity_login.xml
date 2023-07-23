@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  xmlns:tools="http://schemas.android.com/tools"
+			  android:id="@+id/activity_login"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  tools:context="com.appgo.appgopro.views.LoginActivity"
+			  android:orientation="vertical"
+			  android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/loginLogoImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+		android:layout_marginBottom="70dp"
+		android:src="@drawable/login_logo"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:layout_marginStart="45dp"
+		android:layout_marginEnd="45dp">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="45dp"
+				android:orientation="horizontal"
+				android:layout_gravity="center">
+
+				<ImageView
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_gravity="center"
+					android:src="@drawable/user"/>
+
+				<Button
+					android:id="@+id/countryCodeBtn"
+					android:layout_height="match_parent"
+					android:layout_width="40dp"
+					android:text="+86"
+					android:textColor="@color/colorMain"
+					android:background="@color/transparent"
+					android:layout_marginLeft="10dp"
+					android:textAlignment="textStart" />
+
+				<ImageButton
+					android:id="@+id/countryCodeImg"
+					android:layout_height="10dp"
+					android:layout_width="10dp"
+					android:layout_gravity="center"
+					android:background="@drawable/arrow_down"
+					android:layout_marginRight="8dp"/>
+
+				<TextView
+					android:layout_width="1dp"
+					android:layout_height="25dp"
+					android:layout_gravity="center"
+					android:text=""
+					android:background="@color/colorMain"/>
+
+				<EditText
+					android:id="@+id/phoneNumEdit"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="@android:color/transparent"
+					android:ems="10"
+					android:hint="@string/login_phonenumedit_hint"
+					android:inputType="phone"
+					android:paddingStart="8dp"
+					android:textColor="@color/colorMain"
+					android:textColorHint="@color/colorGrayText"
+					android:textSize="15sp"/>
+			</LinearLayout>
+
+			<TextView
+				android:layout_height="1dp"
+				android:background="@color/colorMain"
+				android:layout_marginStart="40dp"
+				android:layout_width="match_parent" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="45dp"
+				android:orientation="horizontal"
+				android:layout_gravity="center">
+
+				<ImageView
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_gravity="center"
+					android:src="@drawable/password"/>
+
+				<EditText
+					android:id="@+id/passwordEdit"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginStart="10dp"
+					android:background="@android:color/transparent"
+					android:ems="10"
+					android:fontFamily="sans-serif"
+					android:hint="@string/login_passwordedit_hint"
+					android:inputType="textPassword"
+					android:textColor="@color/colorMain"
+					android:textColorHint="@color/colorGrayText"
+					android:textSize="15sp"/>
+
+			</LinearLayout>
+
+			<TextView
+				android:layout_height="1dp"
+				android:background="@color/colorMain"
+				android:layout_marginStart="40dp"
+				android:layout_width="match_parent" />
+
+			<Button
+				android:id="@+id/loginBtn"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_gravity="center"
+				android:layout_marginTop="30dp"
+				android:text="@string/login_loginbtn_text"
+				android:background="@drawable/round_fill_button"
+				android:textColor="@android:color/white"
+				android:textSize="20sp"
+				android:textAllCaps="false"/>
+
+			<Button
+				android:id="@+id/signupBtn"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_marginTop="20dp"
+				android:layout_gravity="center"
+				android:text="@string/login_signupbtn_text"
+				android:background="@drawable/round_stroke_button"
+				android:textColor="@color/colorMain"
+				android:textSize="20sp"
+				android:textAllCaps="false" />
+
+			<Button
+				android:id="@+id/forgotPasswordBtn"
+				android:layout_width="wrap_content"
+				android:layout_height="40dp"
+				android:layout_gravity="center"
+				android:layout_marginTop="10dp"
+				android:background="@android:color/transparent"
+				android:text="@string/login_forgotpasswordbtn_text"
+				android:textAllCaps="false"
+				android:textColor="@color/colorGrayText"
+				android:textSize="15sp"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_marginStart="45dp"
+		android:layout_marginEnd="45dp"
+		android:layout_marginTop="20dp"
+		android:layout_marginBottom="20dp">
+
+		<TextView
+			android:id="@+id/hintTitleText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/login_hinttitle_text"
+			android:textColor="@color/colorGrayText"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintTop_toTopOf="parent"/>
+
+		<TextView
+			android:id="@+id/hintMessageText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="10dp"
+			android:text="@string/login_hintmsg_text"
+			android:textColor="@color/colorGrayText"
+			app:layout_constraintLeft_toRightOf="@+id/hintTitleText"
+			app:layout_constraintTop_toTopOf="parent"/>
+    </LinearLayout>
+
+	<TextView
+		android:id="@+id/bottomMessageText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginTop="10dp"
+		android:text="@string/login_bottommsg_text"
+		android:textColor="@color/colorMain"
+		android:layout_marginBottom="15dp"
+		android:textSize="12sp" />
+
+</LinearLayout>

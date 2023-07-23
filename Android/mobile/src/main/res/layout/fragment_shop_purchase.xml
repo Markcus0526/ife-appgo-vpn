@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorMain">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:cropToPadding="true"
+            android:src="@drawable/signup_backbtn"
+            android:tint="@color/colorWhite"
+            android:tintMode="src_atop"
+            android:padding="0dp"
+            android:background="@color/transparent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shop_buy_title"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/expTitle"
+                android:text="@string/shop_buy_expiration"
+                android:textColor="@color/colorMain"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/durationText"
+                android:text="30天"
+                android:textColor="@color/colorMain"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/expTitle"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:text="@string/shop_buy_capacity"
+                android:textColor="@color/colorMain"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/transferText"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/transferText"
+                android:text="10GB"
+                android:textColor="@color/colorMain"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/serverTitle"
+                android:text="@string/shop_buy_server"
+                android:textColor="@color/colorMain"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/serverNameText"
+                android:text="香港特别行政区"
+                android:textColor="@color/colorMain"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/serverTitle"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:text="@string/shop_buy_price"
+                android:textColor="@color/colorMain"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/priceText"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/priceText"
+                android:text="¥25元"
+                android:textColor="@color/colorMain"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorGrayText"></TextView>
+
+        <TextView
+            android:text="@string/shop_buy_paymode"
+            android:textColor="@color/colorMain"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"></TextView>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/pay1Btn"
+                    android:src="@drawable/alipay"
+                    android:background="@color/transparent"
+                    android:layout_centerInParent="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:id="@+id/pay1Txt"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="0dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <ImageButton
+                    android:id="@+id/pay2Btn"
+                    android:src="@drawable/alipay"
+                    android:background="@color/transparent"
+                    android:layout_centerInParent="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:id="@+id/pay2Txt"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="0dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/pay3Btn"
+                    android:src="@drawable/acoin"
+                    android:background="@color/transparent"
+                    android:layout_centerInParent="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:id="@+id/pay3Txt"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="0dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/buynowBtn"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/round_fill_button"
+                android:text="@string/shop_buy_buynow"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

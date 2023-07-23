@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite" >
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_toRightOf="@+id/flagImg"
+			android:layout_alignParentBottom="true"
+			android:background="@color/colorSeperator"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+							android:layout_width="0dp"
+							android:layout_height="match_parent"
+							android:layout_weight="1"
+							android:background="@color/colorWhite">
+
+				<ImageView
+					android:id="@+id/runTabIcon"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:layout_alignParentTop="true"
+					android:layout_centerHorizontal="true"
+					android:layout_marginTop="5dp"
+					android:src="@drawable/run_tab"/>
+
+				<TextView
+					android:id="@+id/runTabTitle"
+					android:layout_width="match_parent"
+					android:layout_height="20dp"
+					android:layout_below="@+id/runTabIcon"
+					android:layout_centerHorizontal="true"
+					android:gravity="center"
+					android:text="@string/run_tab_title"
+					android:textSize="12sp"/>
+
+				<Button
+					android:id="@+id/runTabButton"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_alignParentTop="true"
+					android:background="@color/transparent"
+					android:onClick="OnRunTabSelected"/>
+
+			</RelativeLayout>
+
+			<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+							android:layout_width="0dp"
+							android:layout_height="match_parent"
+							android:layout_weight="1"
+							android:background="@color/colorWhite">
+
+				<ImageView
+					android:id="@+id/shopTabIcon"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:layout_alignParentTop="true"
+					android:layout_centerHorizontal="true"
+					android:layout_marginTop="5dp"
+					android:src="@drawable/shop_tab"/>
+
+				<TextView
+					android:id="@+id/shopTabTitle"
+					android:layout_width="match_parent"
+					android:layout_height="20dp"
+					android:layout_below="@+id/shopTabIcon"
+					android:gravity="center"
+					android:text="@string/shop_tab_title"
+					android:textSize="12sp"/>
+
+				<Button
+					android:id="@+id/shopTabButton"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_alignParentTop="true"
+					android:background="@color/transparent"
+					android:onClick="OnShopTabSelected"/>
+
+			</RelativeLayout>
+
+			<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+							android:layout_width="0dp"
+							android:layout_height="match_parent"
+							android:layout_weight="1"
+							android:background="@color/colorWhite">
+
+				<ImageView
+					android:id="@+id/meTabIcon"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:layout_alignParentTop="true"
+					android:layout_centerHorizontal="true"
+					android:layout_marginTop="5dp"
+					android:src="@drawable/me_tab"/>
+
+				<ImageView
+					android:id="@+id/meBadgeImg"
+					android:layout_width="12dp"
+					android:layout_height="12dp"
+					android:src="@drawable/ic_badge"
+                    android:layout_alignRight="@+id/meTabIcon"
+                    android:layout_alignTop="@+id/meTabIcon"
+                    android:visibility="gone"/>
+
+				<TextView
+					android:id="@+id/meTabTitle"
+					android:layout_width="match_parent"
+					android:layout_height="20dp"
+					android:layout_below="@+id/meTabIcon"
+					android:gravity="center"
+					android:text="@string/me_tab_title"
+					android:textSize="12sp"/>
+
+				<Button
+					android:id="@+id/meTabButton"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_alignParentTop="true"
+					android:background="@color/transparent"
+					android:onClick="OnMeTabSelected"/>
+
+			</RelativeLayout>
+
+		</LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

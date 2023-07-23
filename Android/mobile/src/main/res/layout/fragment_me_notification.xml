@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:orientation="vertical"
+			  android:background="@color/colorWhite">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="@color/colorMain">
+
+		<ImageButton
+			android:id="@+id/backBtn"
+			android:layout_width="50dp"
+			android:layout_height="match_parent"
+			android:layout_alignParentLeft="true"
+			android:cropToPadding="true"
+			android:src="@drawable/signup_backbtn"
+			android:tint="@color/colorWhite"
+			android:tintMode="src_atop"
+			android:padding="0dp"
+			android:background="@color/transparent"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/me_menu_notifications"
+			android:textColor="@color/colorWhite"
+			android:textSize="20sp"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:layout_marginStart="@dimen/dimen_20dp"
+		android:layout_marginEnd="@dimen/dimen_20dp"
+		android:layout_marginTop="@dimen/dimen_20dp"
+		android:layout_marginBottom="@dimen/dimen_20dp">
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/notificationList"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:divider="@drawable/country_list_divider"/>
+
+	</RelativeLayout>
+
+
+</LinearLayout>

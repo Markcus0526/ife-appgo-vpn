@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Global Strings -->
+    <string name="app_name">AppGo</string>
+    <string name="day">Days</string>
+    <string name="currency">￥</string>
+    <string name="unit">RMB</string>
+    <string name="acoin">A Coin</string>
+    <string name="level">Level</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+	<string name="ok">OK</string>
+	<string name="cancel">Cancel</string>
+	<string name="error">Error</string>
+
+	<!-- Global Messages-->
+	<string name="cant_connect_to_server">Unstable network, please try again later.</string>
+	<string name="select_server_or_qrcode">Please choose purchased server first.</string>
+    <string name="failed_to_parse_qrcode">Cann\'t parse QR code.</string>
+	<string name="failed_to_pay_with_alipay">Failed to pay with Alipay.</string>
+    <string name="paid_successfully">Paid successfully.</string>
+    <string name="select_payment_method">Please select payment method.</string>
+	<string name="do_you_remove_this_server">Do you remove this server?</string>
+    <string name="cant_use_vpnserver">Connected but Failed to accelerate. Please change 4G/WIFI network and try again.</string>
+    <string name="read_notificationas_and_right_acceleration">Please read notifications and choose right acceleration config.</string>
+    <string name="profile_is_expired">Data plan expired, please renew.</string>
+    <string name="new_version_is_available">New version is available.Please update now.</string>
+    <string name="change_acceleration_config_after_disconnecting">Please change acceleration config after disconnecting service.</string>
+    <string name="share_appgo_to">Share AppGo to...</string>
+
+    <!-- Splash Activity Strings -->
+    <string name="splash_copyright">Copyright© 2016-2018 AppGo. All Rights Reserved.</string>
+    <string name="splash_message">Fast Track to the World</string>
+
+	<!-- Welcome Activity String -->
+    <string name="welcome_header_1">Easy-to-use</string>
+    <string name="welcome_content_1">Access the World in One Click</string>
+    <string name="welcome_header_2">Great for China</string>
+    <string name="welcome_content_2">Load with Blazing Fast Speed</string>
+    <string name="welcome_header_3">Cross-Platform</string>
+    <string name="welcome_content_3">One Account for 5 Devices</string>
+    <string name="welcome_finish">Start Now</string>
+
+    <!-- Login Activity Strings -->
+    <string name="item_image_contentDescription">Country flag</string>
+    <string name="item_preview_country">China</string>
+    <string name="item_preview_dialCode">+86</string>
+    <string name="login_phonenumedit_hint">Enter phone number</string>
+    <string name="login_passwordedit_hint">Enter password</string>
+    <string name="login_loginbtn_text">Log In</string>
+    <string name="login_signupbtn_text">Sign Up</string>
+    <string name="login_forgotpasswordbtn_text">Forgot password?</string>
+    <string name="login_bottommsg_text">stable service and speed, give you a different experience</string>
+    <string name="login_hinttitle_text">Prompt:</string>
+    <string name="login_hintmsg_text">register to share data plan on multiple devices</string>
+	<string name="login_input_phone_number">Please enter your phone number.</string>
+	<string name="login_input_password">Please enter your password.</string>
+
+	<!-- Signup Activity Strings -->
+    <string name="signup_email">Email Account</string>
+    <string name="signup_email_hint">Enter email accont</string>
+    <string name="signup_nickname">Nick Name</string>
+    <string name="signup_nickname_hint">Enter nickname</string>
+    <string name="signup_phonenum">Phone Number</string>
+    <string name="signup_phonenum_hint">Enter phone number</string>
+    <string name="signup_vfcode">Verification Code</string>
+    <string name="signup_vfcode_hint">Enter code</string>
+    <string name="signup_vfcode_request">Request</string>
+    <string name="signup_password">Password</string>
+    <string name="signup_password_hint">Enter password</string>
+    <string name="signup_passconfirm">Confirm Password</string>
+    <string name="signup_passconfirm_hint">Enter password again</string>
+    <string name="signup_useoption">Terms of Use</string>
+    <string name="signup_gotologin">Already have an account \t|\tLog in</string>
+	<string name="signup_input_phone_number">Please enter phone number</string>
+	<string name="signup_input_all_field">Please enter all of fields</string>
+	<string name="signup_dismatch_password">Please enter password correctly</string>
+	<string name="signup_registered_successfully">registered successfully</string>
+
+	<!-- Term of Use Activity Strings -->
+	<string name="termofuse_title">Term of Use</string>
+
+    <!-- CountrySelect Activity Strings -->
+    <string name="country_select_title">Country or Region Code</string>
+
+    <!-- ForgotPassword Activity Strings -->
+	<string name="forgot_password_input_phone_number">Please enter phone number</string>
+    <string name="forgot_password_change">Reset password</string>
+	<string name="forgot_password_input_all_field">Please enter all of fields</string>
+	<string name="forgot_password_dismatch_password">Please enter password correctly</string>
+
+    <!-- Run Fragment Strings -->
+    <string name="run_tab_title">Run</string>
+	<string name="run_select_server">Select Server</string>
+	<string name="run_tap_to_connect">Tap to connect</string>
+    <string name="run_connecting">Connecting</string>
+    <string name="run_connected">Random Node Connected</string>
+    <string name="run_disconnecting">Disconnecting</string>
+
+    <!-- RunServer Fragment Strings -->
+    <string name="run_server_title">Choose Server</string>
+	<string name="server_overtime">Overtime</string>
+    <string name="server_qrcode_name">Server Name</string>
+    <string name="server_qrcode_hint">Enter server name</string>
+    <string name="add_profile_scanner_permission_required">Camera permission is required for scanning QR code.</string>
+
+    <!-- ShopCountry Fragment Strings -->
+    <string name="shop_tab_title">Shop</string>
+    <string name="shop_country_title">Data Acceleration Plan</string>
+    <string name="shop_country_description_title">Shop description</string>
+    <string name="shop_country_description_1st">Data plan of AppGo is used to accelerate network and it can\'t be a substitue of local data trafic. Data plan purchased after phone number registration support 5 devices at the same time.</string>
+    <string name="shop_country_description_2nd">Overseas servers can only accelerate overseas apps, Chinese servers can only accelerate Chinese apps. Please choose the country which apps\' servers located in to have better experiences.</string>
+
+    <!-- ShopServer Fragment Strings -->
+    <string name="shop_server_title">Server Cluster of </string>
+    <string name="shop_server_hint">Attention:</string>
+	<string name="shop_server_hint_desc">The data plan will expire whether you reach the network usage limit or pass the due date. Please buy a new plan after expiration.</string>
+	<string name="shop_server_desc">Feature:</string>
+	<string name="shop_server_purchase">Purchase</string>
+
+    <!-- ShopBuy Fragment Strings -->
+    <string name="shop_buy_title">Purchase</string>
+    <string name="shop_buy_expiration">Validity period:</string>
+    <string name="shop_buy_capacity">Data quota:</string>
+    <string name="shop_buy_server">Server:</string>
+    <string name="shop_buy_price">Price:</string>
+    <string name="shop_buy_paymode">Select payment method</string>
+    <string name="shop_buy_buynow">Pay Now</string>
+
+    <!-- MeMenu Fragment Strings -->
+    <string name="me_tab_title">Me</string>
+    <string name="me_menu_notifications">Notifications</string>
+    <string name="me_menu_website">Official Website</string>
+    <string name="me_menu_feedback">Feedback</string>
+    <string name="me_menu_share">Share AppGo</string>
+    <string name="me_menu_rate">Rate AppGo</string>
+    <string name="me_menu_about">About</string>
+    <string name="me_menu_language">Language</string>
+    <string name="me_menu_password">Password</string>
+    <string name="me_menu_signout">Sign Out</string>
+    <string name="me_menu_signout_confirm">Are you sure you want to sign out?</string>
+	<string name="appgo_feedback">AppGo Feedback</string>
+
+    <!-- MeLanguage Fragment Strings -->
+	<string name="me_language_english">English</string>
+	<string name="me_language_chinese">中文</string>
+    <string name="me_language_save">Save</string>
+
+    <!-- MePassword Fragment Strings -->
+    <string name="me_password_pwd">Password</string>
+    <string name="me_password_pwd_hint">Input old password</string>
+    <string name="me_password_new_pwd">New password</string>
+    <string name="me_password_new_pwd_hint">Input new password</string>
+    <string name="me_password_confirm_pwd_hint">Confirm new password</string>
+    <string name="me_password_vfcode">Verification Code</string>
+    <string name="me_password_vfcode_hint">Input code</string>
+    <string name="me_password_vfcode_request">Request</string>
+	<string name="me_password_modify">Modify</string>
+
+    <!-- MeAbout Fragment Strings -->
+    <string name="me_about_version">AppGo v2.2</string>
+    <string name="me_about_copyright">Copyright© 2016-2018 AppGo</string>
+    <string name="me_about_twitter">Follow on Twitter</string>
+    <string name="me_about_telegram">Join Telegram Group</string>
+    <string name="me_about_about_title">About AppGo</string>
+    <string name="me_about_about_content"></string>
+
+    <!-- Run Fragment Strings -->
+    <string name="run_servername">Server</string>
+    <string name="run_vpnmode">Acceleration Config</string>
+    <string name="run_vpnmode_in">International</string>
+    <string name="run_vpnmode_cn">China</string>
+    <string name="run_vpnmode_all">All</string>
+    <string name="run_show_ad">AdBlock</string>
+    <string name="run_capacity_status">Data Quota</string>
+    <string name="run_expiration">Due Time</string>
+    <string name="run_special_options">UDP and IPv6 Forwarding</string>
+
+
+	<!-- MeFeedback Fragment Strings -->
+	<string name="me_feedbacK_list">Request problem</string>
+	<string name="me_feedback_search">Search feedback</string>
+	<string name="me_feedback_chat">Instant conversion</string>
+
+	<string name="please_wait">Please wait...</string>
+	<string name="tap_again_to_exit">Tap again to exit</string>
+
+    <string name="signing_in">Signing in…</string>
+
+    <!-- Fail Messages -->
+    <string name="proxy_empty">Proxy/Password should not be empty</string>
+
+    <string name="stat_summary">Sent: \t\t\t\t\t%3$s\t↑\t%1$s\nReceived: \t%4$s\t↓\t%2$s</string>
+    <string name="speed">%s/s</string>
+    <plurals name="bytes">
+        <item quantity="one">Byte</item>
+        <item quantity="other">Bytes</item>
+    </plurals>
+
+    <string name="quick_toggle">AppGo</string>
+
+    <!-- notification category -->
+    <string name="service_vpn">VPN Service</string>
+    <string name="service_proxy">Proxy Service</string>
+    <string name="service_transproxy">Transproxy Service</string>
+    <string name="forward_success">AppGo started.</string>
+    <string name="invalid_server">Invalid server name</string>
+    <string name="service_failed">Failed to connect the remote server</string>
+    <string name="stop">Stop</string>
+    <string name="reboot_required">Failed to start VPN service. You might need to reboot your device.</string>
+    <string name="profile_empty">Please select a profile</string>
+
+    <!-- plugin -->
+    <string name="plugin_disabled">Disabled</string>
+    <string name="plugin_unknown">Unknown plugin %s</string>
+
+</resources>

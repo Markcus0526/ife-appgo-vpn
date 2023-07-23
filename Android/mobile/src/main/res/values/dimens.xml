@@ -1,0 +1,17 @@
+<resources>
+
+	<dimen name="dimen_16dp">16dp</dimen>
+    <dimen name="dimen_20dp">20dp</dimen>
+	<dimen name="dimen_32dp">32dp</dimen>
+
+	<!-- Default screen margins, per the Android Design guidelines. -->
+	<dimen name="logo_top_margin">70dp</dimen>
+
+	<!-- Font Sizes -->
+	<dimen name="dimen_font_size_base_title">20dp</dimen>
+	<dimen name="dimen_font_size_base_subtitle">17dp</dimen>
+
+	<!-- Button dimensions -->
+	<dimen name="dimen_button_general_height">40dp</dimen>
+
+</resources>

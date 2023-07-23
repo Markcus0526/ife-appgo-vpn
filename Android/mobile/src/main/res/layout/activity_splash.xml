@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/splash_back"
+                android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logoMarkImg"
+		android:layout_marginTop="@dimen/logo_top_margin"
+		android:layout_height="100dp"
+		android:layout_width="100dp"
+		android:layout_gravity="center"
+        android:src="@drawable/logo_mark"/>
+
+    <ImageView
+        android:id="@+id/logoTitleImg"
+        android:src="@drawable/logo_title"
+        android:layout_marginTop="30dp"
+        android:layout_height="30dp"
+        android:layout_width="135dp"
+		android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/splashMessageText"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+		android:layout_gravity="center"
+        android:text="@string/splash_message"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        android:textColor="@color/colorMain"
+        android:textAlignment="center" />
+
+	<Space
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1"/>
+
+	<ImageView
+		android:id="@+id/splashVersionImg"
+		android:layout_width="wrap_content"
+		android:layout_height="20dp"
+		android:layout_gravity="center"
+		android:src="@drawable/logo_version"
+		android:layout_marginBottom="8dp"
+		android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/splashCopyrightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/splash_copyright"
+        android:textSize="12sp"
+        android:textColor="@color/colorMain" />
+
+</LinearLayout>

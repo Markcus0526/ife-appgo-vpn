@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Global Strings -->
+    <string name="app_name">AppGo</string>
+    <string name="day">天</string>
+    <string name="currency">¥</string>
+    <string name="unit">元</string>
+    <string name="acoin">A币</string>
+    <string name="level">等级</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+	<string name="ok">确定</string>
+	<string name="cancel">取消</string>
+	<string name="error">错误</string>
+
+	<!-- Global Messages-->
+	<string name="cant_connect_to_server">网络不给力，请稍候重试或切换网路连接。</string>
+    <string name="select_server_or_qrcode">请先选择内购的服务器再点开关。</string>
+    <string name="failed_to_parse_qrcode">无法分析QR识别。</string>
+    <string name="failed_to_pay_with_alipay">支付宝失败了。</string>
+    <string name="paid_successfully">谢谢，支付成功了。</string>
+    <string name="select_payment_method">请选择付款方式。</string>
+    <string name="do_you_remove_this_server">您想删除这个服务器吗？</string>
+    <string name="cant_use_vpnserver">已连接但加速失败，如果您持续遇到该问题，请尝试切换4G、WIFI或运营商等网络环境。</string>
+    <string name="read_notificationas_and_right_acceleration">加速规则与服务器不匹配，请查看动态通知选择正确的加速规则。</string>
+    <string name="profile_is_expired">套餐已失效，请重新购买。</string>
+    <string name="new_version_is_available">新版本来啦，马上更新吧！</string>
+    <string name="change_acceleration_config_after_disconnecting">请断开连接再切换加速规则。</string>
+    <string name="share_appgo_to">分享AppGo。。。</string>
+
+    <!-- Splash Activity Strings -->
+    <string name="splash_copyright">Copyright© 2016-2018 AppGo. All Rights Reserved.</string>
+    <string name="splash_message">Fast Track to the World</string>
+
+    <!-- Welcome Activity String -->
+    <string name="welcome_header_1">简单智能</string>
+    <string name="welcome_content_1">一键加速国内外应用</string>
+    <string name="welcome_header_2">甄选线路</string>
+    <string name="welcome_content_2">自动分配优质直连节点</string>
+    <string name="welcome_header_3">跨平台支持</string>
+    <string name="welcome_content_3">注册账号通用手机电脑</string>
+    <string name="welcome_finish">立即体验</string>
+
+    <!-- Login Activity Strings -->
+    <string name="item_image_contentDescription">国旗</string>
+    <string name="item_preview_country">中国</string>
+    <string name="item_preview_dialCode">+86</string>
+    <string name="login_phonenumedit_hint">请输入您的手机号</string>
+    <string name="login_passwordedit_hint">请输入您的密码</string>
+    <string name="login_loginbtn_text">登录</string>
+    <string name="login_signupbtn_text">注册</string>
+    <string name="login_forgotpasswordbtn_text">忘记密码？</string>
+    <string name="login_bottommsg_text">稳定的服务和速度，给你不一样的体验</string>
+    <string name="login_hinttitle_text">提示：</string>
+    <string name="login_hintmsg_text">注册APPGO账号以便在多台设备上共享购买到的流量哟！</string>
+	<string name="login_input_phone_number">请输入您的手机号码。</string>
+	<string name="login_input_password">请输入您的密码。</string>
+
+	<!-- Signup Activity Strings -->
+    <string name="signup_email">邮件</string>
+    <string name="signup_email_hint">请输入邮件账户</string>
+    <string name="signup_nickname">昵称</string>
+    <string name="signup_nickname_hint">请输入您的昵称</string>
+    <string name="signup_phonenum">手机号</string>
+    <string name="signup_phonenum_hint">请输入您的手机号码</string>
+    <string name="signup_vfcode">验证码</string>
+    <string name="signup_vfcode_hint">请输入验证码</string>
+    <string name="signup_vfcode_request">验证码</string>
+    <string name="signup_password">密码</string>
+    <string name="signup_password_hint">输入密码</string>
+    <string name="signup_passconfirm">确认密码</string>
+    <string name="signup_passconfirm_hint">确认密码</string>
+    <string name="signup_useoption">使用条款</string>
+    <string name="signup_gotologin">已有账户\t|\t登录</string>
+	<string name="signup_input_phone_number">请输入手机号码</string>
+	<string name="signup_input_all_field">请输入所有项目</string>
+	<string name="signup_dismatch_password">您输入的密码不一致</string>
+	<string name="signup_registered_successfully">注册成功了</string>
+
+	<!-- Term of Use Activity Strings -->
+	<string name="termofuse_title">使用期限</string>
+
+    <!-- CountryCodeActivity Activity Strings -->
+    <string name="country_select_title">国家或地区代码</string>
+
+    <!-- ForgotPassword Activity Strings -->
+	<string name="forgot_password_change">修改密码</string>
+	<string name="forgot_password_input_phone_number">请输入手机号码</string>
+	<string name="forgot_password_input_all_field">请输入所有项目</string>
+	<string name="forgot_password_dismatch_password">您输入的密码不一致</string>
+
+    <!-- Run Fragment Strings -->
+    <string name="run_tab_title">运行</string>
+	<string name="run_select_server">选择服务器</string>
+    <string name="run_tap_to_connect">请点击按钮开启加速</string>
+    <string name="run_connecting">连接中，请勿关闭</string>
+    <string name="run_connected">已连接随机分配节点</string>
+    <string name="run_disconnecting">断开中</string>
+
+    <!-- RunServer Fragment Strings -->
+    <string name="run_server_title">选择服务器</string>
+	<string name="server_overtime">超过</string>
+    <string name="server_qrcode_name">服务器名称</string>
+    <string name="server_qrcode_hint">输入服务器名称</string>
+
+    <!-- Shopcountry Fragment Strings -->
+    <string name="shop_tab_title">套餐</string>
+    <string name="shop_country_title">加速流量套餐</string>
+    <string name="shop_country_description_title">套餐说明</string>
+    <string name="shop_country_description_1st">AppGo的流量是加速流量，无法代替运营商的数据流量，注册账户后购买的套餐手机电脑通用，每个套餐支持5 台设备。</string>
+    <string name="shop_country_description_2nd">国外服务器用于加速国外的应用，中国服务器用于海外用户回国加速，请购买应用归属国家的服务器以获得更 好的加速体验。</string>
+
+    <!-- ShopServer Fragment Strings -->
+    <string name="shop_server_title">服务器集群</string>
+	<string name="shop_server_hint">提示：</string>
+    <string name="shop_server_hint_desc">到有效期或流量使用完该套餐即停止，请再购买新套餐恢复使用。</string>
+    <string name="shop_server_desc">套餐特点：</string>
+    <string name="shop_server_purchase">购 买</string>
+
+    <!-- ShopBuy Fragment Strings -->
+    <string name="shop_buy_title">购买</string>
+    <string name="shop_buy_expiration">有效期:</string>
+    <string name="shop_buy_capacity">流量额度:</string>
+    <string name="shop_buy_server">服务器:</string>
+    <string name="shop_buy_price">价格:</string>
+    <string name="shop_buy_paymode">选择支付方式</string>
+    <string name="shop_buy_buynow">立即购买</string>
+
+    <!-- MeMenu Fragment Strings -->
+    <string name="me_tab_title">我的</string>
+    <string name="me_menu_notifications">动态通知</string>
+    <string name="me_menu_website">官方网站</string>
+    <string name="me_menu_feedback">意见反馈</string>
+    <string name="me_menu_share">分享 AppGo</string>
+    <string name="me_menu_rate">给我们五星好评</string>
+    <string name="me_menu_about">关于我们</string>
+    <string name="me_menu_language">多语言</string>
+    <string name="me_menu_password">修改密码</string>
+    <string name="me_menu_signout">退出账户</string>
+    <string name="me_menu_signout_confirm">您确定要退出吗？</string>
+    <string name="appgo_feedback">AppGo意见反馈</string>
+
+    <!-- MeLanguage Fragment Strings -->
+    <string name="me_language_english">English</string>
+    <string name="me_language_chinese">中文</string>
+    <string name="me_language_save">保存</string>
+
+	<!-- MePassword Fragment Strings -->
+	<string name="me_password_pwd">密码</string>
+	<string name="me_password_pwd_hint">请输入原密码</string>
+	<string name="me_password_new_pwd">新密码</string>
+	<string name="me_password_new_pwd_hint">请输入新密码</string>
+	<string name="me_password_confirm_pwd_hint">请再次输入新密码</string>
+	<string name="me_password_vfcode">验证码</string>
+	<string name="me_password_vfcode_hint">请输入验证码</string>
+	<string name="me_password_vfcode_request">验证码</string>
+	<string name="me_password_modify">修改密码</string>
+
+    <!-- MeAbout Fragment Strings -->
+    <string name="me_about_version">AppGo v2.2</string>
+    <string name="me_about_copyright">Copyright© 2016-2018 AppGo</string>
+    <string name="me_about_twitter">关注我们的Twitter</string>
+    <string name="me_about_telegram">加入Telegram过论群</string>
+    <string name="me_about_about_title">关于AppGo</string>
+	<string name="me_about_about_content"></string>
+
+	<!-- Run Fragment Strings -->
+    <string name="run_servername">服务器名称</string>
+    <string name="run_vpnmode">加速规则</string>
+    <string name="run_vpnmode_in">国外</string>
+    <string name="run_vpnmode_cn">中国</string>
+    <string name="run_vpnmode_all">全局</string>
+    <string name="run_show_ad">去广告</string>
+    <string name="run_capacity_status">流量使用情况</string>
+    <string name="run_expiration">流量到期时间</string>
+    <string name="run_special_options">UDP和IPv6转发</string>
+
+	<!-- MeFeedback Fragment Strings -->
+	<string name="me_feedbacK_list">反馈问题</string>
+	<string name="me_feedback_search">查看反馈</string>
+	<string name="me_feedback_chat">即时交谈</string>
+
+	<string name="please_wait">稍等。。。</string>
+    <string name="tap_again_to_exit">点击再次退出</string>
+
+    <string name="signing_in">登录中。。。</string>
+
+    <!-- Fail Messages -->
+    <string name="proxy_empty">"代理服务器地址及密码不能为空"</string>
+
+    <string name="stat_summary">"上传: \t%3$s\t↑\t%1$s\n下载: \t%4$s\t↓\t%2$s"</string>
+    <string name="speed">%s/s</string>
+    <plurals name="bytes">
+        <item quantity="one">Byte</item>
+        <item quantity="other">Bytes</item>
+    </plurals>
+
+    <string name="quick_toggle">AppGo</string>
+
+    <!-- notification category -->
+    <string name="service_vpn">VPN 服务</string>
+    <string name="service_proxy">代理模式</string>
+    <string name="service_transproxy">透明代理模式</string>
+    <string name="forward_success">后台服务已开始运行</string>
+    <string name="invalid_server">服务器名无效</string>
+    <string name="service_failed">无法连接远程服务器</string>
+    <string name="stop">停止</string>
+    <string name="reboot_required">VPN 服务启动失败。你可能需要重启设备。</string>
+    <string name="profile_empty">请选择配置文件</string>
+
+    <!-- plugin -->
+    <string name="plugin_disabled">禁用</string>
+    <string name="plugin_unknown">未知插件 %s</string>
+</resources>

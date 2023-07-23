@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    			android:layout_width="match_parent"
+    			android:layout_height="match_parent"
+				android:background="@color/colorWhite">
+    
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorMain">
+
+		<ImageButton
+			android:id="@+id/backBtn"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentLeft="true"
+			android:cropToPadding="true"
+			android:src="@drawable/signup_backbtn"
+			android:tint="@color/colorWhite"
+			android:tintMode="src_atop"
+			android:padding="0dp"
+			android:background="@color/transparent"/>
+
+        <ImageView
+                android:id="@+id/markImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signup_mark"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"/>
+
+		<TextView
+                android:id="@+id/versionTxt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/me_about_version"
+                android:textSize="20sp"
+				android:textColor="@color/colorWhite"
+				android:layout_centerHorizontal="true"
+				android:layout_below="@+id/markImg"
+				android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/me_about_copyright"
+            android:textColor="@color/colorWhite"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/versionTxt"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerLayout"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/round_fill_layout"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/twitterBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/me_about_twitter"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:background="@drawable/round_fill_button"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_centerHorizontal="true"/>
+
+		<Button
+			android:id="@+id/telegramBtn"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:text="@string/me_about_telegram"
+			android:textColor="@color/colorWhite"
+			android:textSize="20sp"
+			android:textAllCaps="false"
+			android:background="@drawable/round_fill_button"
+            android:layout_below="@+id/twitterBtn"
+			android:layout_marginTop="20dp"
+			android:layout_marginLeft="50dp"
+			android:layout_marginRight="50dp"
+			android:layout_centerHorizontal="true"
+			android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/aboutTitleText"
+            android:text="@string/me_about_about_title"
+            android:textColor="@color/colorMain"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/telegramBtn"
+            android:layout_marginTop="20dp"/>
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@+id/aboutTitleText"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="20dp"
+			android:scrollbars="vertical">
+
+			<TextView
+				android:id="@+id/contentText"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/me_about_about_content"
+				android:textColor="@color/colorMain"
+				android:textSize="16sp"/>
+
+		</ScrollView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

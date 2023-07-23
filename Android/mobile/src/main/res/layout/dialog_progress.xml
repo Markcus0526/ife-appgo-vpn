@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#30000000"
+        android:id="@+id/content_layout">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:layout_marginEnd="@dimen/dimen_32dp"
+		android:layout_marginStart="@dimen/dimen_32dp"
+		android:background="@color/MSG_WHITE_BACK"
+		android:orientation="vertical">
+
+		<RelativeLayout
+			android:id="@+id/titleLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:visibility="gone">
+
+			<TextView
+				android:id="@+id/titleText"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_marginEnd="@dimen/dimen_20dp"
+				android:layout_marginStart="@dimen/dimen_20dp"
+				android:textColor="@color/MSG_DARK_BLUE"
+				android:gravity="bottom"
+				android:textSize="@dimen/dimen_font_size_base_title"/>
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="80dp">
+
+			<com.wang.avi.AVLoadingIndicatorView
+				android:id="@+id/progressWheel"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_centerVertical="true"
+				android:layout_marginStart="@dimen/dimen_20dp"
+				app:indicatorColor="@color/MSG_DARK_BLUE"
+				app:indicatorName="BallPulseIndicator"/>
+
+			<TextView
+				android:id="@+id/contentText"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginEnd="@dimen/dimen_20dp"
+				android:layout_marginStart="26dp"
+				android:layout_toRightOf="@+id/progressWheel"
+				android:text="Please wait..."
+				android:textColor="@color/MSG_DARK_BLUE"
+				android:textSize="@dimen/dimen_font_size_base_subtitle"/>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</RelativeLayout>

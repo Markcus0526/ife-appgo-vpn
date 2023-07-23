@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/welcome_fragment"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:clipChildren="false"
+              android:background="#ffffff"
+              android:paddingTop="28dp">
+
+    <FrameLayout
+            android:id="@+id/images"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:clipChildren="false">
+        <ImageView
+                android:id="@+id/welcome_01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/ic_welcome2"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false" />
+    </FrameLayout>
+
+    <TextView
+            android:id="@+id/heading"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/welcome_header_2"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"/>
+
+    <TextView
+            android:id="@+id/content"
+            android:text="@string/welcome_content_2"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@android:color/transparent"/>
+
+</LinearLayout>

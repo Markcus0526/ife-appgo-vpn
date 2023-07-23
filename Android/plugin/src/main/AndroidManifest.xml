@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.appgo.appgopro.plugin">
+    <application
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <meta-data android:name="com.appgo.appgopro.plugin.version"
+                   android:value="0.1.0"/>
+    </application>
+</manifest>

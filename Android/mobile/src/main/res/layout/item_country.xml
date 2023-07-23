@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="50dp"
+    android:layout_width="match_parent">
+
+    <ImageView
+        android:id="@+id/flagImg"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_flag_cn"
+        android:contentDescription="@string/item_image_contentDescription" />
+
+    <TextView
+		android:id="@+id/countryNameText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/item_preview_country"
+        android:textSize="16sp"
+        android:textColor="@color/countryName"
+        android:gravity="left|center_vertical"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/flagImg"
+		android:layout_toStartOf="@+id/countryPhoneCodeText"
+		android:maxLines="2"/>
+
+    <TextView
+		android:id="@+id/countryPhoneCodeText"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:textSize="16sp"
+        android:gravity="right|center_vertical"
+		android:layout_alignParentEnd="true"
+        android:layout_marginRight="45dp"
+        android:textColor="@color/countryCode"
+        android:text="@string/item_preview_dialCode" />
+
+    <ImageView
+		android:id="@+id/selectedImg"
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+		android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/list_selected" />
+
+	<TextView
+		android:id="@+id/seperatorText"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_toRightOf="@+id/flagImg"
+		android:layout_alignParentBottom="true"
+		android:layout_marginStart="15dp"
+		android:background="@color/colorMain"/>
+
+</RelativeLayout>

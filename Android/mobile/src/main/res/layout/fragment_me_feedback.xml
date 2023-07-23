@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+			  android:background="@color/colorWhite">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="@color/colorMain">
+
+		<ImageButton
+			android:id="@+id/backBtn"
+			android:layout_width="50dp"
+			android:layout_height="match_parent"
+			android:layout_alignParentLeft="true"
+			android:cropToPadding="true"
+			android:src="@drawable/signup_backbtn"
+			android:tint="@color/colorWhite"
+			android:tintMode="src_atop"
+			android:padding="0dp"
+			android:background="@color/transparent"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/me_menu_feedback"
+			android:textColor="@color/colorWhite"
+			android:textSize="20sp"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"/>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="@dimen/dimen_20dp"
+		android:layout_marginEnd="@dimen/dimen_20dp"
+		android:layout_marginTop="@dimen/dimen_32dp"
+		android:layout_marginBottom="@dimen/dimen_32dp"
+		android:orientation="vertical">
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="40dp">
+
+			<ImageView
+				android:id="@+id/ticketListImg"
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/ic_feedback_request"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/ticketListImg"
+				android:layout_marginLeft="20dp"
+				android:layout_centerVertical="true"
+				android:text="@string/me_feedbacK_list"
+				android:textColor="@color/colorMain"
+				android:textSize="16sp" />
+
+			<Button
+				android:id="@+id/requestBtn"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@drawable/list_item_button" />
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="40dp">
+
+			<ImageView
+				android:id="@+id/searchImg"
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/ic_feedback_ticketlist"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/searchImg"
+				android:layout_marginLeft="20dp"
+				android:layout_centerVertical="true"
+				android:text="@string/me_feedback_search"
+				android:textColor="@color/colorMain"
+				android:textSize="16sp" />
+
+			<Button
+				android:id="@+id/searchBtn"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@drawable/list_item_button" />
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="40dp">
+
+			<ImageView
+				android:id="@+id/chatImg"
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/ic_feedback_chat"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/chatImg"
+				android:layout_marginLeft="20dp"
+				android:layout_centerVertical="true"
+				android:text="@string/me_feedback_chat"
+				android:textColor="@color/colorMain"
+				android:textSize="16sp" />
+
+			<Button
+				android:id="@+id/chatBtn"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@drawable/list_item_button" />
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+
+</LinearLayout>

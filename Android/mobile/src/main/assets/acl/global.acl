@@ -1,0 +1,3 @@
+[proxy_all]
+[bypass_list]
+(^|\.)gaga51\.com$

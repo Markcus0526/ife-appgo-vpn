@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/connectLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:background="@color/colorWhite">
+
+		<ImageView
+			android:id="@+id/backImg"
+			android:layout_width="match_parent"
+			android:layout_alignParentTop="true"
+			android:layout_height="wrap_content"
+			android:src="@drawable/run_back"
+			android:adjustViewBounds="true"
+			android:scaleType="fitCenter"/>
+
+		<ImageView
+			android:id="@+id/connectingbackImg"
+			android:layout_width="190dp"
+			android:layout_height="190dp"
+			android:layout_centerInParent="true"
+			android:scaleType="fitCenter"
+			android:src="@drawable/connected_back"
+			android:visibility="gone"/>
+
+		<ImageView
+			android:id="@+id/connectingImg"
+			android:layout_width="120dp"
+			android:layout_height="120dp"
+			android:layout_centerInParent="true"
+			android:scaleType="fitCenter"
+			android:src="@drawable/connect_effect"
+			android:visibility="gone"/>
+
+		<ImageView
+			android:id="@+id/connectImg"
+			android:layout_width="120dp"
+			android:layout_height="120dp"
+			android:layout_centerInParent="true"
+			android:scaleType="fitCenter"
+			android:src="@drawable/connect_off"/>
+
+        <Button
+            android:id="@+id/connectBtn"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"/>
+
+        <TextView
+            android:id="@+id/connectText"
+            android:text="@string/run_tap_to_connect"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:layout_alignBottom="@+id/backImg"
+            android:layout_marginBottom="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+		<ImageButton
+			android:id="@+id/notificationBtn"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentTop="true"
+			android:layout_marginTop="10dp"
+			android:layout_marginRight="10dp"
+			android:background="@drawable/notification_button"/>
+
+		<ImageView
+			android:id="@+id/badgeImg"
+			android:layout_width="8dp"
+			android:layout_height="8dp"
+			android:src="@drawable/ic_badge"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentTop="true"
+			android:layout_marginTop="16dp"
+			android:layout_marginRight="16dp"
+			android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/connectLayout"
+        android:layout_alignParentBottom="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <TextView
+                        android:text="@string/run_servername"
+                        android:textColor="@color/colorMain"
+                        android:textSize="16sp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+					<ImageButton
+						android:id="@+id/detailBtn"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:background="@color/transparent"
+						android:cropToPadding="true"
+						android:padding="0dp"
+						android:rotation="180"
+						android:src="@drawable/signup_backbtn"
+						android:tint="@color/colorGrayText"
+						android:tintMode="src_atop"/>
+
+					<TextView
+						android:id="@+id/serverText"
+						android:text=""
+						android:textColor="@color/colorMain"
+						android:textSize="16sp"
+						android:maxLines="1"
+						android:layout_centerVertical="true"
+						android:layout_toLeftOf="@id/detailBtn"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"/>
+
+                    <ImageView
+						android:id="@+id/serverImg"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_toLeftOf="@+id/serverText"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"/>
+
+					<TextView
+						android:id="@+id/delayText"
+						android:text=""
+						android:textColor="@color/countryCode"
+						android:textSize="14sp"
+						android:layout_toLeftOf="@id/detailBtn"
+						android:layout_alignParentBottom="true"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"/>
+
+					<Button
+						android:id="@+id/selServerBtn"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_alignParentTop="true"
+						android:layout_toLeftOf="@+id/detailBtn"
+						android:background="@color/transparent"
+						android:text=""
+						android:textAlignment="viewEnd"
+						android:textAllCaps="false"
+						android:textColor="@color/colorMain"
+						android:textSize="16sp"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorMainTran"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:text="@string/run_vpnmode"
+                        android:textColor="@color/colorMain"
+                        android:textSize="16sp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"/>
+
+                    <Button
+                        android:id="@+id/globalModeBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:minWidth="0dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/vfcode_button"
+                        android:text="@string/run_vpnmode_all"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"/>
+
+                    <Button
+                        android:id="@+id/nationModeBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:minWidth="0dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:layout_toLeftOf="@+id/globalModeBtn"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/vfcode_button"
+                        android:text="@string/run_vpnmode_in"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/transferLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorMainTran"/>
+
+                <RelativeLayout
+                    android:id="@+id/transferLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:text="@string/run_capacity_status"
+                        android:textColor="@color/colorMain"
+                        android:textSize="16sp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:id="@+id/transferText"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textColor="@color/colorGrayText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/transferProgLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp">
+
+                    <ProgressBar
+                        android:id="@+id/transferProg"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:background="@drawable/round_progress_back"
+                        android:progressDrawable="@drawable/round_progress"
+                        android:max="100"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"/>
+
+                </RelativeLayout>
+
+				<TextView
+                    android:id="@+id/expireLine"
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:background="@color/colorMainTran"/>
+
+                <RelativeLayout
+                    android:id="@+id/expireLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:text="@string/run_expiration"
+                        android:textColor="@color/colorMain"
+                        android:textSize="16sp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:id="@+id/expireText"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textColor="@color/colorGrayText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+
+				<TextView
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:background="@color/colorMainTran"/>
+
+				<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:visibility="visible">
+
+					<TextView
+							android:text="@string/run_special_options"
+							android:textColor="@color/colorMain"
+							android:textSize="16sp"
+							android:layout_centerVertical="true"
+							android:layout_width="200dp"
+							android:layout_height="wrap_content"
+							android:layout_alignParentLeft="true"/>
+
+					<android.support.v7.widget.SwitchCompat
+							android:id="@+id/udpSwitch"
+							android:theme="@style/AppGoSwitch"
+							android:layout_width="50dp"
+							android:layout_height="wrap_content"
+							android:layout_centerVertical="true"
+							android:layout_alignParentRight="true" />
+
+				</RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

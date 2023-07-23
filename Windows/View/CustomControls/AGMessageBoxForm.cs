@@ -1,0 +1,112 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using AppGo.Controller;
+using AppGo.Properties;
+
+namespace AppGo.View.CustomControls
+{
+    public partial class AGMessageBoxForm : Form
+    {
+        public AGMessageBoxForm(bool showCancel = false)
+        {
+            InitializeComponent();
+
+            ShowInTaskbar = false;
+            OKButton.Text = LocalizationManager.GetString("ok");
+            CancelButton.Text = LocalizationManager.GetString("cancel");
+
+            if (showCancel)
+                CancelButton.Visible = true;
+
+            this.Icon = Resources.ic_appgo_main_icon;
+        }
+
+        public string Message
+        {
+            get
+            {
+                return MessageLabel.Text;
+            }
+            set
+            {
+                MessageLabel.Text = value;
+            }
+        }
+
+        protected override void WndProc(ref Message m)
+        {
+            const int WM_SYSCOMMAND = 0x112;
+            const int WM_NCHITTEST = 0x84;
+            const int HTCLIENT = 1;
+            const int HTCAPTION = 2;
+
+            switch (m.Msg)
+            {
+                case WM_NCHITTEST:
+                    {
+                        base.WndProc(ref m);
+
+                        if (m.Result.ToInt32() == HTCLIENT)
+                        {
+                            // Make the rest of the form's entire client area draggable
+                            // by having it report itself as part of the caption region.
+                            m.Result = new IntPtr(HTCAPTION);
+                        }
+
+                        return;
+                    }
+
+                case WM_SYSCOMMAND:
+                    {
+                        // Setting the form's MaximizeBox property to false does *not* disable maximization
+                        // behavior when the caption area is double-clicked.
+                        // Since this window is fixed-size and does not support a "maximized" mode, and the
+                        // entire client area is treated as part of the caption to enable dragging, we also
+                        // need to ensure that double-click-to-maximize is disabled.
+                        // NOTE: See documentation for WM_SYSCOMMAND for explanation of the magic value 0xFFF0!
+                        const int SC_MAXIMIZE = 0xF030;
+                        if ((m.WParam.ToInt32() & 0xFFF0) == SC_MAXIMIZE)
+                        {
+                            m.Result = IntPtr.Zero;
+                        }
+                        else
+                        {
+                            base.WndProc(ref m);
+                        }
+                        return;
+                    }
+            }
+            base.WndProc(ref m);
+        }
+
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                const int CS_DROPSHADOW = 0x00020000;
+                CreateParams cp = base.CreateParams;
+                cp.ClassStyle |= CS_DROPSHADOW;
+                return cp;
+            }
+        }
+
+        private void OKButton_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+            Close();
+        }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+            Close();
+        }
+    }
+}

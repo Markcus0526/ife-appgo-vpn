@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorMain">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shop_country_title"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/shopCountryList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+			android:divider="@drawable/country_list_divider"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/descriptionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorGrayText"
+            android:text="@string/shop_country_description_title"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:textSize="15sp"
+                android:textColor="@color/colorGrayText"
+                android:paddingRight="5dp"
+                android:text="1."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:textSize="15sp"
+                android:textColor="@color/colorGrayText"
+                android:ellipsize="start"
+                android:text="@string/shop_country_description_1st"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:textSize="15sp"
+                android:textColor="@color/colorGrayText"
+                android:paddingRight="5dp"
+                android:text="2."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:textSize="15sp"
+                android:textColor="@color/colorGrayText"
+                android:text="@string/shop_country_description_2nd"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
