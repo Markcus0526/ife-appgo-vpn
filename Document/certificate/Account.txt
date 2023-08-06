@@ -1,0 +1,40 @@
+- apple account
+Account: appgochina@gmail.com
+Password:  Appgo520,
+
+- apple sandbox account
+Account: pmgochina@gmail.com
+Password: Appgo521
+
+APNS p12 key
+password: appgo!2016
+
+Jiguang account
+username: voganwong@gmail.com
+password: AfNMn3WTP]?m
+
+- instabug.com
+Username:  piscesfm@qq.com
+Password:  Zhengguang04
+Company: AppGo Inc
+Application: AppGo
+
+KF5 
+address: https://appgo.kf5.com/user/login/
+username: test@appgo.in
+password: appgo2017
+
+netflix
+877928601@qq.com
+yjy199754
+
+mob.com
+username: appgo@vip.qq.com
+passpass: mob666
+
+Google play
+account: appgohk@gmail.com
+password:Appgo521,
+
+Fabric
+appgohk@gmail.com
