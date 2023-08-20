@@ -30,8 +30,8 @@ namespace AppGo.View
             ViewController.Controller.EnableStatusChanged += Controller_EnableStatusChanged;
             ViewController.Controller.ServiceChanged += Controller_ServiceChanged;
 
-            GetServiceInfo();
-            GetLastNoticficationInfo();
+            //GetServiceInfo();
+            //GetLastNoticficationInfo();
 
             ViewController.Controller.ToggleEnable(AppPref.Load().enabled);
         }

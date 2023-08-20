@@ -67,6 +67,13 @@ namespace AppGo.View
         {
             try
             {
+                ViewController.Controller.InitRunner();
+                ViewController.Controller.ToggleEnable(false);
+
+                Thread.Sleep(5000);
+                FinishSplash(1);
+                return;
+
                 HttpWebRequest request = WebRequest.Create(API.BASE_URL) as HttpWebRequest;
                 using (HttpWebResponse resp = request.GetResponse() as HttpWebResponse)
                 {

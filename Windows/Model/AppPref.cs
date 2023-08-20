@@ -40,7 +40,7 @@ namespace AppGo.Model
         public string refreshToken = "";
         public string loginDate;
         public string ruleMode = VPNRule.GLOBAL;
-        public string currentLanguage = LocalizationManager.Chinese;
+        public string currentLanguage = LocalizationManager.English;
         public bool logined = false;
         public bool firstRun = true;
         public string versionCode = "";
