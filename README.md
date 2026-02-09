@@ -1,45 +1,190 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+# AppGo (AppGoPro) — Multi‑Platform VPN Client 🛡️🌐
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) ![Platforms](https://img.shields.io/badge/Platforms-Android%20|%20iOS%20|%20macOS%20|%20Windows-brightgreen)
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
-
----
-
-## Edit a file
-
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
-
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+> Cross-platform VPN client suite (Android, iOS, macOS, Windows) integrating Shadowsocks-based engines, tun2socks and platform packet processors. This repo contains platform-specific apps, native engines, helper libraries and build files.
 
 ---
 
-## Create a file
+## 🚀 About
+AppGo is a multi-platform VPN client and toolkit. It provides:
+- A user-facing VPN client (Android/iOS/macOS/Windows) with UI, preferences, and purchase flow.
+- A native VPN engine stack: Shadowsocks (shadowsocks-libev/Shadowsocks frameworks), tun2socks, redsocks and PacketProcessor frameworks for packet handling.
+- DNS/ACL helpers (e.g., Overture) and platform integrations (Android VpnService, iOS PacketTunnel / NetworkExtension, macOS NetworkExtension, Windows service).
 
-Next, you’ll add a new file to this repository.
-
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
-
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+Why this matters:
+- The project brings together cross-platform UI and robust native networking components to deliver reliable VPN/proxy functionality across major desktop and mobile platforms.
 
 ---
 
-## Clone a repository
+## 🖼️ Screenshot
+<img src="ios/Share/Assets.xcassets/im_splash_1_en.imageset/im_splash_1_en.jpg" alt="AppGo splash" width="540">
 
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
+---
 
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
+## 📁 Project Structure (high level)
+- /android — Android app (Kotlin), Gradle config, native libs (.so), plugin module  
+  - android/mobile — Android application module (manifest, Kotlin sources, assets)
+- /ios — iOS app (Swift/ObjC), frameworks in ios/Library, PacketTunnel provider
+- /macos — macOS app (Swift/ObjC), NetworkExtension and helper libs
+- /windows — Windows app (C#), service and helper binaries
+- /android/plugin — plugin module for Android
+- LICENSE — MIT license
+- .gitignore — recommended ignores and generated files
 
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+Quick mapping:
+- Android entry: android/mobile/src/main/java/com/appgo/appgopro/AppGoApplication.kt
+- iOS entry: ios/AppGo/AppDelegate.swift
+- macOS entry: macos/AppGo/AppDelegate.swift
+- Windows entry: windows/Program.cs
+
+---
+
+## 🧰 Tech Stack & Key Components
+- Languages: Kotlin (Android), Swift / Objective-C (iOS & macOS), C# (Windows), C for native tools.
+- VPN / networking engines:
+  - Shadowsocks (native libs and platform frameworks)
+  - tun2socks (transparent SOCKS proxying)
+  - redsocks (redirector)
+  - PacketProcessor (iOS/macOS kernel-level/tunnel helpers)
+  - Overture (DNS/ACL resolver)
+- Libraries / frameworks:
+  - iOS / macOS: Alamofire, CocoaAsyncSocket, CocoaLumberjack, Sentry
+  - Android: Gradle/Kotlin tooling, JNI native libraries (.so)
+  - Windows: .NET 4.5.1 (project targets), native helper executables packaged under windows/Data
+- Build & packaging:
+  - Android: Gradle wrapper (android/gradlew), Android SDK/NDK, Go (for parts)
+  - iOS / macOS: Xcode projects and embedded frameworks (ios/Library, macos/Library)
+  - Windows: Visual Studio / MSBuild (.sln and .csproj files)
+
+---
+
+## ⚙️ Quick Start — Build & Run (developer guide)
+
+General note: this is a large multi-project repo. The steps below are the minimal developer quickstarts (focused on local dev builds). See platform-specific module READMEs (android/README.md) for deeper detail.
+
+### Prerequisites (common)
+- Git (repo has submodules in some forks; run git submodule update --init --recursive if needed)
+- Ensure you have the platform toolchains installed for the target you intend to build.
+
+---
+
+### 📱 Android (Kotlin)
+Requirements:
+- JDK 1.8
+- Android SDK (Build Tools 27+)
+- Android NDK r16+ (optional if native code needs rebuild)
+- Go (for some native toolchains) — set GOROOT_BOOTSTRAP if required
+
+Build (from repository root):
+1. Configure environment variables:
+   - ANDROID_HOME=/path/to/android-sdk
+   - optionally ANDROID_NDK_HOME=/path/to/android-ndk
+   - GOROOT_BOOTSTRAP=/path/to/go
+2. Build an APK (Gradle wrapper included):
+   - cd android
+   - ./gradlew assembleDebug
+3. Install on device:
+   - adb install -r mobile/build/outputs/apk/debug/mobile-debug.apk
+
+Notes:
+- Android manifest and components: android/mobile/src/main/AndroidManifest.xml
+- Native libraries (.so) are under android/mobile/src/main/jniLibs/ for multiple ABIs.
+
+---
+
+### 🍎 iOS (Swift / Obj‑C)
+Requirements:
+- Xcode (matching iOS deployment target in project)
+- CocoaPods / Carthage not required if frameworks are prebundled (ios/Library contains frameworks)
+
+Build:
+1. Open workspace/project:
+   - Open ios/AppGo.xcworkspace or ios/AppGo.xcodeproj in Xcode.
+2. Select a signing team and device, then build & run (⌘R).
+
+Notes:
+- Packet tunnel / VPN provider code in: ios/Share/Vpn and ios/Share/Vpn/PacketTunnelProvider.*
+- App configuration: ios/AppGo/AppGo-Info.plist and ios/config.plist
+
+---
+
+### 🖥️ macOS
+Requirements:
+- Xcode
+- Network Extension entitlements for VPN functionality
+
+Build:
+1. Open macos/AppGo.xcodeproj in Xcode.
+2. Choose the App target or AppGoLauncher and run.
+
+Notes:
+- PacketProcessor/NetworkExtension integration resides in macos/Share/Vpn and macos/Library.
+
+---
+
+### 🪟 Windows (C#)
+Requirements:
+- Visual Studio (2015/2017/2019) with .NET Framework 4.5.1 or higher
+
+Build:
+1. Open windows/AppGo.sln in Visual Studio.
+2. Restore NuGet packages and build the solution.
+3. Run AppGo.exe from build output or install using the provided installer configuration.
+
+Notes:
+- The main entry is windows/Program.cs. The service helper is in windows/AppGoService.
+
+---
+
+## 🔧 Configuration & Runtime files
+- Android: strings, configs and assets under android/mobile/src/main/res and android/mobile/src/main/assets (ACL lists, hosts, gfwlist, etc.).
+- iOS/macOS: ios/AppGo/AppGo-Info.plist and ios/config.plist contain configuration, ATS exceptions, and URL schemes.
+- Windows: windows/Data includes prebuilt native executables and drivers (tap drivers packaged as gz). Windows build references them under windows/Data.
+
+Be careful when changing secrets/keys — some API keys/fabric keys appear in Info.plist and manifest metadata (check before public use or App Store submission).
+
+---
+
+## 🤝 Contributing
+- Fork → branch → pull request.
+- Keep changes per-platform under the relevant folder (android/, ios/, macos/, windows/).
+- Code style:
+  - Android: Kotlin + Gradle; follow idiomatic Kotlin and Android Studio lint rules.
+  - iOS / macOS: Swift/ObjC; use Xcode's recommended style.
+  - Windows: C# .NET conventions.
+- Please run platform-specific linters/builds locally before PRs.
+- If you add native binaries, include build steps or scripts to regenerate them.
+
+---
+
+## 📜 License
+- This repository is licensed under the MIT License — see LICENSE.
+
+---
+
+## 🔭 Future Table (Roadmap)
+| Priority | Area | Planned work | Notes |
+|---:|---|---|---|
+| 🔥 High | Stability | Harden VPN reconnection & error handling | Improve native engine restart logic across platforms |
+| 🔷 Medium | Features | Per-app split tunneling & per-network profiles | Platform-specific implementation (Android VpnService, macOS NE) |
+| 🟡 Low | UX | Redesign settings & onboarding | Multi-language strings already present |
+| 🟢 Backlog | CI/Automation | Add cross-platform CI builds and tests | Automate Android Gradle, iOS unit tests and Windows builds |
+
+---
+
+## 💬 Quick links (dev)
+- Android module: android/mobile
+- iOS project: ios/AppGo.xcodeproj
+- macOS project: macos/AppGo.xcodeproj
+- Windows solution: windows/AppGo.sln
+- Android README: android/README.md (contains additional Android build details)
+
+---
+
+If you want, I can:
+- Expand any platform's Quick Start into a step‑by‑step tutorial (including provisioning, signing, and native binary rebuild).
+- Generate CONTRIBUTING.md with PR template and commit message guidance.
+- Produce a short architecture diagram or a CONTRIBUTOR checklist.
+
+Thank you — happy hacking! ✨
