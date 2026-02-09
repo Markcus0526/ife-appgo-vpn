@@ -1,4 +1,4 @@
-# Multi‑Platform VPN Client 🛡️🌐
+# AppGo Multi‑Platform VPN Client 🛡️🌐
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) ![Platforms](https://img.shields.io/badge/Platforms-Android%20|%20iOS%20|%20macOS%20|%20Windows-brightgreen)
 
