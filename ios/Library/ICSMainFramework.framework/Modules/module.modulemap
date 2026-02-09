@@ -1,0 +1,11 @@
+framework module ICSMainFramework {
+  umbrella header "ICSMainFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module ICSMainFramework.Swift {
+    header "ICSMainFramework-Swift.h"
+    requires objc
+}

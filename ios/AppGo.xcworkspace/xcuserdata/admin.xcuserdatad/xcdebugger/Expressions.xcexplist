@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "RunViewController.onClickConnectBtn(_:):RunViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "buttonConnect.isEnabled">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in TodayViewController.startVPNFromServer():TodayViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "NSDataUtils.nsdataToJSON(response.data)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in TodayViewController.stopVPNFromServer():TodayViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "WSAPI.Path.UserServices.url">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "RunViewController.stopConnectAnimation():RunViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "buttonConnect.isEnabled">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "RunViewController.viewDidLoad():RunViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static AppPref.getAvailableServices():AppPref.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "NSKeyedUnarchiver.unarchiveObject(with: data!)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

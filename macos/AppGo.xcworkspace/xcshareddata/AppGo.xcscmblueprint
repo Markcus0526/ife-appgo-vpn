@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "37A014F99F5A75C1D769E7BCAF67816C10E2A552",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "37A014F99F5A75C1D769E7BCAF67816C10E2A552" : 9223372036854775807,
+    "0D01F7CC6099CFF62FD398A2C0172A6F095DD814" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0A030729-BFEF-4CF1-BCA1-9411E49B1533",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "37A014F99F5A75C1D769E7BCAF67816C10E2A552" : "AppGo\/",
+    "0D01F7CC6099CFF62FD398A2C0172A6F095DD814" : "..\/.."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AppGo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AppGo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/jadestar\/appgo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0D01F7CC6099CFF62FD398A2C0172A6F095DD814"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/shadowsocks\/ShadowsocksX-NG.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "37A014F99F5A75C1D769E7BCAF67816C10E2A552"
+    }
+  ]
+}

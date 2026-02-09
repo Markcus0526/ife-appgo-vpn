@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  AppGoPro
+
+  Created by LEI on 4/19/16.
+  Copyright © 2016 TouchingApp. All rights reserved.
+*/
+
+"data quota" = "Data Quota";
+"overtime" = "Overtime";
+
+"please select vpn server." = "Please choose purchased server";
+"127.0.0.1(example)" = "127.0.0.1(Example)";

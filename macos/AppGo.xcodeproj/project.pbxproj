@@ -1,0 +1,1299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84222AF721C2975D008E1214 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84222AF621C2975D008E1214 /* IAPManager.swift */; };
+		84273D0721C9405500424443 /* AGSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84273D0621C9405500424443 /* AGSplashViewController.swift */; };
+		84275BFF21AAF40A00FF257A /* PacketProcessor_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6876521A4CB2F009D7CED /* PacketProcessor_macOS.framework */; };
+		8493ECE721B25C6F005F3C1B /* ToastWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8493ECE621B25C6E005F3C1B /* ToastWindowController.xib */; };
+		8499F6ED21CB3ABF00622012 /* Sentry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6877C21A4CB5E009D7CED /* Sentry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84A55A6C21B26A560086A2CA /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A55A6B21B26A560086A2CA /* AppInfo.swift */; };
+		84A55A6D21B26A560086A2CA /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A55A6B21B26A560086A2CA /* AppInfo.swift */; };
+		84A55A6E21B26A560086A2CA /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A55A6B21B26A560086A2CA /* AppInfo.swift */; };
+		84B6877221A4CB5D009D7CED /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6876621A4CB2F009D7CED /* CocoaAsyncSocket.framework */; };
+		84B6877321A4CB5D009D7CED /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6876721A4CB2F009D7CED /* CocoaLumberjack.framework */; };
+		84B6877421A4CB5D009D7CED /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6876A21A4CB2F009D7CED /* CocoaLumberjackSwift.framework */; };
+		84B6878B21A4CB60009D7CED /* Sentry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6877C21A4CB5E009D7CED /* Sentry.framework */; };
+		84B6878C21A4CB60009D7CED /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6877D21A4CB5E009D7CED /* CryptoSwift.framework */; };
+		84B6879221A4CB60009D7CED /* ProgressKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6878321A4CB5F009D7CED /* ProgressKit.framework */; };
+		84B6879721A4CC88009D7CED /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6876921A4CB2F009D7CED /* Alamofire.framework */; };
+		84C0A9DB21B1FB950086F6A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C0A9D921B1FB950086F6A2 /* Main.storyboard */; };
+		84C1910221A6BF6A0024D540 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6876A21A4CB2F009D7CED /* CocoaLumberjackSwift.framework */; };
+		84CD00AE21A4DD52008E9868 /* VpnExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 84CD00A621A4DD52008E9868 /* VpnExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		84CD00B321A4DDF5008E9868 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6876621A4CB2F009D7CED /* CocoaAsyncSocket.framework */; };
+		84CD00B421A4DDF8008E9868 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6876721A4CB2F009D7CED /* CocoaLumberjack.framework */; };
+		84CD00B621A4DDFC008E9868 /* PacketProcessor_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6876521A4CB2F009D7CED /* PacketProcessor_macOS.framework */; };
+		84CD00B921A4DE24008E9868 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD00B821A4DE24008E9868 /* NetworkExtension.framework */; };
+		84CD00BA21A4DE2A008E9868 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD00B821A4DE24008E9868 /* NetworkExtension.framework */; };
+		84E7000B21A4E99000120E32 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FFC121A4E99000120E32 /* SimplePing.m */; };
+		84E7001821A4EA9400120E32 /* AppGoConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7000D21A4EA9400120E32 /* AppGoConnection.swift */; };
+		84E7001A21A4EA9400120E32 /* AppGoConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7000F21A4EA9400120E32 /* AppGoConnectivity.swift */; };
+		84E7001B21A4EA9400120E32 /* AppGoSentryLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7001021A4EA9400120E32 /* AppGoSentryLogger.swift */; };
+		84E7002021A4EA9400120E32 /* VpnManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7001721A4EA9400120E32 /* VpnManager.swift */; };
+		84E7002121A4EAA000120E32 /* AppGoConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7000D21A4EA9400120E32 /* AppGoConnection.swift */; };
+		84E7002621A4EAB500120E32 /* PacketTunnelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E7001321A4EA9400120E32 /* PacketTunnelProvider.m */; };
+		84E7002721A4EAB900120E32 /* Shadowsocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E7001521A4EA9400120E32 /* Shadowsocks.m */; };
+		84E7002821A4EABD00120E32 /* Subnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7001621A4EA9400120E32 /* Subnet.swift */; };
+		84E7002C21A4EB8F00120E32 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6876621A4CB2F009D7CED /* CocoaAsyncSocket.framework */; };
+		84E7002D21A4EB8F00120E32 /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6876621A4CB2F009D7CED /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E7002E21A4EB8F00120E32 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6876721A4CB2F009D7CED /* CocoaLumberjack.framework */; };
+		84E7002F21A4EB8F00120E32 /* CocoaLumberjack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6876721A4CB2F009D7CED /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E7003021A4EB8F00120E32 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6876A21A4CB2F009D7CED /* CocoaLumberjackSwift.framework */; };
+		84E7003121A4EB8F00120E32 /* CocoaLumberjackSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6876A21A4CB2F009D7CED /* CocoaLumberjackSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E7003721A4EBC100120E32 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD00B821A4DE24008E9868 /* NetworkExtension.framework */; };
+		84E7003921A4EC0800120E32 /* AppGoConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7000F21A4EA9400120E32 /* AppGoConnectivity.swift */; };
+		84E7003A21A4EC2800120E32 /* AppGoConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7000D21A4EA9400120E32 /* AppGoConnection.swift */; };
+		84E7003B21A4EC3400120E32 /* AppGoConnectionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7000E21A4EA9400120E32 /* AppGoConnectionStore.swift */; };
+		84E7003C21A4EC4A00120E32 /* AppGoSentryLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7001021A4EA9400120E32 /* AppGoSentryLogger.swift */; };
+		84E7003F21A5203300120E32 /* AppGoConnectionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7000E21A4EA9400120E32 /* AppGoConnectionStore.swift */; };
+		84E7004021A5205A00120E32 /* AppGoVpn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7001121A4EA9400120E32 /* AppGoVpn.swift */; };
+		84E7004221A55E3300120E32 /* NotificationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF8721A4E98F00120E32 /* NotificationUtils.swift */; };
+		84E7004321A55E3400120E32 /* NotificationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF8721A4E98F00120E32 /* NotificationUtils.swift */; };
+		84E7004521A5651A00120E32 /* AppGoLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84E7FEFD21A4E37B00120E32 /* AppGoLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		84E7004B21A5666700120E32 /* menu_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E7FFA521A4E98F00120E32 /* menu_icon.png */; };
+		84E7004C21A5666700120E32 /* menu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E7FFA621A4E98F00120E32 /* menu_icon@2x.png */; };
+		84E7004D21A5666700120E32 /* menu_icon_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E7FFA721A4E98F00120E32 /* menu_icon_disabled.png */; };
+		84E7004E21A5666700120E32 /* menu_icon_disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E7FFA821A4E98F00120E32 /* menu_icon_disabled@2x.png */; };
+		84E7005021A5941500120E32 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6BF9531E27B2570061B9A7 /* ServiceManagement.framework */; };
+		84E7005121A5945200120E32 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3FFF3D1D08D9910019A709 /* SystemConfiguration.framework */; };
+		84E7005221A5946800120E32 /* AppleScriptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88621A001FBEDE33002FA60A /* AppleScriptKit.framework */; };
+		84E7005321A5948000120E32 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88621A021FBEDE3D002FA60A /* StoreKit.framework */; };
+		84E7005421A5949200120E32 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3FFF3B1D08D93B0019A709 /* WebKit.framework */; };
+		84E7005821A5A54E00120E32 /* AGWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7005721A5A54E00120E32 /* AGWindow.swift */; };
+		84E7FF0021A4E37B00120E32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FEFF21A4E37B00120E32 /* AppDelegate.swift */; };
+		84E7FF0721A4E37D00120E32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E7FF0521A4E37D00120E32 /* Main.storyboard */; };
+		84E7FF2C21A4E49400120E32 /* AppGoLauncher.app in Resources */ = {isa = PBXBuildFile; fileRef = 84E7FEFD21A4E37B00120E32 /* AppGoLauncher.app */; };
+		84E7FF5221A4E80100120E32 /* AGMainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF3B21A4E80000120E32 /* AGMainWindowController.swift */; };
+		84E7FF5321A4E80100120E32 /* AGNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF3C21A4E80000120E32 /* AGNavigationController.swift */; };
+		84E7FF5421A4E80100120E32 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF3D21A4E80000120E32 /* BaseViewController.swift */; };
+		84E7FF5521A4E80100120E32 /* ToastWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF3E21A4E80000120E32 /* ToastWindowController.swift */; };
+		84E7FF5621A4E80100120E32 /* AGForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF4021A4E80000120E32 /* AGForgotPasswordViewController.swift */; };
+		84E7FF5721A4E80100120E32 /* AGLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF4121A4E80000120E32 /* AGLoginViewController.swift */; };
+		84E7FF5821A4E80100120E32 /* AGPhoneListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF4221A4E80000120E32 /* AGPhoneListViewController.swift */; };
+		84E7FF5921A4E80100120E32 /* AGSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF4321A4E80000120E32 /* AGSignupViewController.swift */; };
+		84E7FF5A21A4E80100120E32 /* AGAboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF4621A4E80000120E32 /* AGAboutUsViewController.swift */; };
+		84E7FF5B21A4E80100120E32 /* AGAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF4721A4E80000120E32 /* AGAccountViewController.swift */; };
+		84E7FF5C21A4E80100120E32 /* AGFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF4821A4E80000120E32 /* AGFeedbackViewController.swift */; };
+		84E7FF5D21A4E80100120E32 /* AGNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF4921A4E80000120E32 /* AGNotificationViewController.swift */; };
+		84E7FF5E21A4E80100120E32 /* AGSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF4A21A4E80000120E32 /* AGSettingsViewController.swift */; };
+		84E7FF5F21A4E80100120E32 /* AGTermOfUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF4B21A4E80000120E32 /* AGTermOfUseViewController.swift */; };
+		84E7FF6021A4E80100120E32 /* AGMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF4D21A4E80100120E32 /* AGMainViewController.swift */; };
+		84E7FF6121A4E80100120E32 /* AGServerSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF4E21A4E80100120E32 /* AGServerSelectionViewController.swift */; };
+		84E7FF6221A4E80100120E32 /* AGAlipayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF5021A4E80100120E32 /* AGAlipayViewController.swift */; };
+		84E7FF6321A4E80100120E32 /* AGShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF5121A4E80100120E32 /* AGShopViewController.swift */; };
+		84E7FFC221A4E99000120E32 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF6721A4E98F00120E32 /* API.swift */; };
+		84E7FFC321A4E99000120E32 /* AppPref.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF6821A4E98F00120E32 /* AppPref.swift */; };
+		84E7FFC621A4E99000120E32 /* MCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF6C21A4E98F00120E32 /* MCountry.swift */; };
+		84E7FFC721A4E99000120E32 /* MPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF6D21A4E98F00120E32 /* MPackage.swift */; };
+		84E7FFC821A4E99000120E32 /* MPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF6E21A4E98F00120E32 /* MPush.swift */; };
+		84E7FFCA21A4E99000120E32 /* MService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF7021A4E98F00120E32 /* MService.swift */; };
+		84E7FFCB21A4E99000120E32 /* MSms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF7121A4E98F00120E32 /* MSms.swift */; };
+		84E7FFCC21A4E99000120E32 /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF7221A4E98F00120E32 /* MUser.swift */; };
+		84E7FFCD21A4E99000120E32 /* MVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF7321A4E98F00120E32 /* MVersion.swift */; };
+		84E7FFD121A4E99000120E32 /* CountryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF7821A4E98F00120E32 /* CountryManager.swift */; };
+		84E7FFD221A4E99000120E32 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF7921A4E98F00120E32 /* Localized.swift */; };
+		84E7FFD321A4E99000120E32 /* AGImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF7B21A4E98F00120E32 /* AGImageView.swift */; };
+		84E7FFD421A4E99000120E32 /* AlertUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF7C21A4E98F00120E32 /* AlertUtils.swift */; };
+		84E7FFD521A4E99000120E32 /* CastUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF7E21A4E98F00120E32 /* CastUtils.swift */; };
+		84E7FFD621A4E99000120E32 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF7F21A4E98F00120E32 /* ColorUtils.swift */; };
+		84E7FFD721A4E99000120E32 /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF8021A4E98F00120E32 /* CommonUtils.swift */; };
+		84E7FFDA21A4E99000120E32 /* JSONUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF8421A4E98F00120E32 /* JSONUtils.m */; };
+		84E7FFDB21A4E99000120E32 /* KeychainItemWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF8521A4E98F00120E32 /* KeychainItemWrapper.swift */; };
+		84E7FFDC21A4E99000120E32 /* LoggerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF8621A4E98F00120E32 /* LoggerUtils.swift */; };
+		84E7FFDD21A4E99000120E32 /* NotificationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF8721A4E98F00120E32 /* NotificationUtils.swift */; };
+		84E7FFDE21A4E99000120E32 /* NSButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF8821A4E98F00120E32 /* NSButtonExtension.swift */; };
+		84E7FFDF21A4E99000120E32 /* NSDataUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF8921A4E98F00120E32 /* NSDataUtils.swift */; };
+		84E7FFE021A4E99000120E32 /* NSError+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF8B21A4E98F00120E32 /* NSError+Helper.m */; };
+		84E7FFE121A4E99000120E32 /* RegexUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF8C21A4E98F00120E32 /* RegexUtils.swift */; };
+		84E7FFE221A4E99000120E32 /* StringCrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF8D21A4E98F00120E32 /* StringCrypt.swift */; };
+		84E7FFE321A4E99000120E32 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF8E21A4E98F00120E32 /* UIHelper.swift */; };
+		84E7FFE621A4E99000120E32 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7FF9221A4E98F00120E32 /* ViewExtension.swift */; };
+		84F327E421AB034C006B8469 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6877D21A4CB5E009D7CED /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84F327E721AB034C006B8469 /* ProgressKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6878321A4CB5F009D7CED /* ProgressKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84F327EA21AB034C006B8469 /* Sentry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6877C21A4CB5E009D7CED /* Sentry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84F327EB21AB034C006B8469 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6876921A4CB2F009D7CED /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84F327EC21AB034C006B8469 /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6876621A4CB2F009D7CED /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84F327ED21AB034C006B8469 /* CocoaLumberjack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6876721A4CB2F009D7CED /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84F327EE21AB034C006B8469 /* CocoaLumberjackSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6876A21A4CB2F009D7CED /* CocoaLumberjackSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84F327F021AB034C006B8469 /* PacketProcessor_macOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84B6876521A4CB2F009D7CED /* PacketProcessor_macOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		886219841FBEDDAA002FA60A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886218EE1FBEDDAA002FA60A /* AppDelegate.swift */; };
+		886219851FBEDDAA002FA60A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 886218F11FBEDDAA002FA60A /* Assets.xcassets */; };
+		886219881FBEDDAA002FA60A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 886218F81FBEDDAA002FA60A /* Localizable.strings */; };
+		886219A41FBEDDAA002FA60A /* AppGo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 886219191FBEDDAA002FA60A /* AppGo-Info.plist */; };
+		886219E61FBEDDAA002FA60A /* SWBApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 886219651FBEDDAA002FA60A /* SWBApplication.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84CD00AC21A4DD52008E9868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B0BFFDD1D0460A70040E62B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84CD00A521A4DD52008E9868;
+			remoteInfo = VpnExtension;
+		};
+		84E7FF2A21A4E3FC00120E32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B0BFFDD1D0460A70040E62B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84E7FEFC21A4E37B00120E32;
+			remoteInfo = AppGoLauncher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84B6879921A4CC88009D7CED /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84F327E421AB034C006B8469 /* CryptoSwift.framework in Embed Frameworks */,
+				84F327E721AB034C006B8469 /* ProgressKit.framework in Embed Frameworks */,
+				84F327EA21AB034C006B8469 /* Sentry.framework in Embed Frameworks */,
+				84F327EB21AB034C006B8469 /* Alamofire.framework in Embed Frameworks */,
+				84F327EC21AB034C006B8469 /* CocoaAsyncSocket.framework in Embed Frameworks */,
+				84F327ED21AB034C006B8469 /* CocoaLumberjack.framework in Embed Frameworks */,
+				84F327EE21AB034C006B8469 /* CocoaLumberjackSwift.framework in Embed Frameworks */,
+				84F327F021AB034C006B8469 /* PacketProcessor_macOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CD00B221A4DD52008E9868 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				84CD00AE21A4DD52008E9868 /* VpnExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E7003621A4EB8F00120E32 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8499F6ED21CB3ABF00622012 /* Sentry.framework in Embed Frameworks */,
+				84E7003121A4EB8F00120E32 /* CocoaLumberjackSwift.framework in Embed Frameworks */,
+				84E7002D21A4EB8F00120E32 /* CocoaAsyncSocket.framework in Embed Frameworks */,
+				84E7002F21A4EB8F00120E32 /* CocoaLumberjack.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B6BF9511E27B2250061B9A7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				84E7004521A5651A00120E32 /* AppGoLauncher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1E7783AEDB4A3BDDC9FF16AC /* libPods-proxy_conf_helper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-proxy_conf_helper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84222AF621C2975D008E1214 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IAPManager.swift; path = AppGo/Shop/IAPManager.swift; sourceTree = SOURCE_ROOT; };
+		84273D0621C9405500424443 /* AGSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGSplashViewController.swift; sourceTree = "<group>"; };
+		847F3BDB21AAE2A1009D0CF4 /* CommandLine.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = CommandLine.entitlements; sourceTree = "<group>"; };
+		8493ECE621B25C6E005F3C1B /* ToastWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToastWindowController.xib; sourceTree = "<group>"; };
+		84A55A6B21B26A560086A2CA /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		84B6876521A4CB2F009D7CED /* PacketProcessor_macOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PacketProcessor_macOS.framework; path = Library/PacketProcessor_macOS.framework; sourceTree = "<group>"; };
+		84B6876621A4CB2F009D7CED /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Library/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		84B6876721A4CB2F009D7CED /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Library/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		84B6876821A4CB2F009D7CED /* Shadowsocks_macOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Shadowsocks_macOS.framework; path = Library/Shadowsocks_macOS.framework; sourceTree = "<group>"; };
+		84B6876921A4CB2F009D7CED /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Library/Alamofire.framework; sourceTree = "<group>"; };
+		84B6876A21A4CB2F009D7CED /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Library/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		84B6877721A4CB5D009D7CED /* MASShortcut.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MASShortcut.bundle; path = Library/MASShortcut.bundle; sourceTree = "<group>"; };
+		84B6877821A4CB5D009D7CED /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Library/RxSwift.framework; sourceTree = "<group>"; };
+		84B6877921A4CB5D009D7CED /* GCDWebServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GCDWebServer.framework; path = Library/GCDWebServer.framework; sourceTree = "<group>"; };
+		84B6877C21A4CB5E009D7CED /* Sentry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sentry.framework; path = Library/Sentry.framework; sourceTree = "<group>"; };
+		84B6877D21A4CB5E009D7CED /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Library/CryptoSwift.framework; sourceTree = "<group>"; };
+		84B6877E21A4CB5E009D7CED /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Library/RxCocoa.framework; sourceTree = "<group>"; };
+		84B6877F21A4CB5F009D7CED /* proxy_conf_helper */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = proxy_conf_helper; path = Library/proxy_conf_helper; sourceTree = "<group>"; };
+		84B6878121A4CB5F009D7CED /* MASShortcut.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MASShortcut.framework; path = Library/MASShortcut.framework; sourceTree = "<group>"; };
+		84B6878221A4CB5F009D7CED /* libPods-proxy_conf_helper.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-proxy_conf_helper.a"; path = "Library/libPods-proxy_conf_helper.a"; sourceTree = "<group>"; };
+		84B6878321A4CB5F009D7CED /* ProgressKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ProgressKit.framework; path = Library/ProgressKit.framework; sourceTree = "<group>"; };
+		84B6878421A4CB60009D7CED /* libBRLOptionParser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBRLOptionParser.a; path = Library/libBRLOptionParser.a; sourceTree = "<group>"; };
+		84C0A9DA21B1FB950086F6A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84CD00A621A4DD52008E9868 /* VpnExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VpnExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CD00AA21A4DD52008E9868 /* VpnExtension-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VpnExtension-Info.plist"; sourceTree = "<group>"; };
+		84CD00AB21A4DD52008E9868 /* VpnExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VpnExtension.entitlements; sourceTree = "<group>"; };
+		84CD00B821A4DE24008E9868 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		84E7000D21A4EA9400120E32 /* AppGoConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoConnection.swift; sourceTree = "<group>"; };
+		84E7000E21A4EA9400120E32 /* AppGoConnectionStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoConnectionStore.swift; sourceTree = "<group>"; };
+		84E7000F21A4EA9400120E32 /* AppGoConnectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoConnectivity.swift; sourceTree = "<group>"; };
+		84E7001021A4EA9400120E32 /* AppGoSentryLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoSentryLogger.swift; sourceTree = "<group>"; };
+		84E7001121A4EA9400120E32 /* AppGoVpn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGoVpn.swift; sourceTree = "<group>"; };
+		84E7001221A4EA9400120E32 /* PacketTunnelProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketTunnelProvider.h; sourceTree = "<group>"; };
+		84E7001321A4EA9400120E32 /* PacketTunnelProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacketTunnelProvider.m; sourceTree = "<group>"; };
+		84E7001421A4EA9400120E32 /* Shadowsocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shadowsocks.h; sourceTree = "<group>"; };
+		84E7001521A4EA9400120E32 /* Shadowsocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shadowsocks.m; sourceTree = "<group>"; };
+		84E7001621A4EA9400120E32 /* Subnet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subnet.swift; sourceTree = "<group>"; };
+		84E7001721A4EA9400120E32 /* VpnManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VpnManager.swift; sourceTree = "<group>"; };
+		84E7005721A5A54E00120E32 /* AGWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGWindow.swift; sourceTree = "<group>"; };
+		84E7FEFD21A4E37B00120E32 /* AppGoLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppGoLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E7FEFF21A4E37B00120E32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84E7FF0621A4E37D00120E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84E7FF0821A4E37E00120E32 /* AppGoLauncher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppGoLauncher-Info.plist"; sourceTree = "<group>"; };
+		84E7FF0921A4E37E00120E32 /* AppGoLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppGoLauncher.entitlements; sourceTree = "<group>"; };
+		84E7FF3B21A4E80000120E32 /* AGMainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGMainWindowController.swift; sourceTree = "<group>"; };
+		84E7FF3C21A4E80000120E32 /* AGNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGNavigationController.swift; sourceTree = "<group>"; };
+		84E7FF3D21A4E80000120E32 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		84E7FF3E21A4E80000120E32 /* ToastWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastWindowController.swift; sourceTree = "<group>"; };
+		84E7FF4021A4E80000120E32 /* AGForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		84E7FF4121A4E80000120E32 /* AGLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGLoginViewController.swift; sourceTree = "<group>"; };
+		84E7FF4221A4E80000120E32 /* AGPhoneListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGPhoneListViewController.swift; sourceTree = "<group>"; };
+		84E7FF4321A4E80000120E32 /* AGSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGSignupViewController.swift; sourceTree = "<group>"; };
+		84E7FF4621A4E80000120E32 /* AGAboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGAboutUsViewController.swift; sourceTree = "<group>"; };
+		84E7FF4721A4E80000120E32 /* AGAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGAccountViewController.swift; sourceTree = "<group>"; };
+		84E7FF4821A4E80000120E32 /* AGFeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGFeedbackViewController.swift; sourceTree = "<group>"; };
+		84E7FF4921A4E80000120E32 /* AGNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGNotificationViewController.swift; sourceTree = "<group>"; };
+		84E7FF4A21A4E80000120E32 /* AGSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGSettingsViewController.swift; sourceTree = "<group>"; };
+		84E7FF4B21A4E80000120E32 /* AGTermOfUseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGTermOfUseViewController.swift; sourceTree = "<group>"; };
+		84E7FF4D21A4E80100120E32 /* AGMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGMainViewController.swift; sourceTree = "<group>"; };
+		84E7FF4E21A4E80100120E32 /* AGServerSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGServerSelectionViewController.swift; sourceTree = "<group>"; };
+		84E7FF5021A4E80100120E32 /* AGAlipayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGAlipayViewController.swift; sourceTree = "<group>"; };
+		84E7FF5121A4E80100120E32 /* AGShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGShopViewController.swift; sourceTree = "<group>"; };
+		84E7FF6721A4E98F00120E32 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		84E7FF6821A4E98F00120E32 /* AppPref.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPref.swift; sourceTree = "<group>"; };
+		84E7FF6C21A4E98F00120E32 /* MCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCountry.swift; sourceTree = "<group>"; };
+		84E7FF6D21A4E98F00120E32 /* MPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPackage.swift; sourceTree = "<group>"; };
+		84E7FF6E21A4E98F00120E32 /* MPush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPush.swift; sourceTree = "<group>"; };
+		84E7FF7021A4E98F00120E32 /* MService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MService.swift; sourceTree = "<group>"; };
+		84E7FF7121A4E98F00120E32 /* MSms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSms.swift; sourceTree = "<group>"; };
+		84E7FF7221A4E98F00120E32 /* MUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
+		84E7FF7321A4E98F00120E32 /* MVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVersion.swift; sourceTree = "<group>"; };
+		84E7FF7821A4E98F00120E32 /* CountryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryManager.swift; sourceTree = "<group>"; };
+		84E7FF7921A4E98F00120E32 /* Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
+		84E7FF7B21A4E98F00120E32 /* AGImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGImageView.swift; sourceTree = "<group>"; };
+		84E7FF7C21A4E98F00120E32 /* AlertUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtils.swift; sourceTree = "<group>"; };
+		84E7FF7E21A4E98F00120E32 /* CastUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastUtils.swift; sourceTree = "<group>"; };
+		84E7FF7F21A4E98F00120E32 /* ColorUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
+		84E7FF8021A4E98F00120E32 /* CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
+		84E7FF8321A4E98F00120E32 /* JSONUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONUtils.h; sourceTree = "<group>"; };
+		84E7FF8421A4E98F00120E32 /* JSONUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONUtils.m; sourceTree = "<group>"; };
+		84E7FF8521A4E98F00120E32 /* KeychainItemWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemWrapper.swift; sourceTree = "<group>"; };
+		84E7FF8621A4E98F00120E32 /* LoggerUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerUtils.swift; sourceTree = "<group>"; };
+		84E7FF8721A4E98F00120E32 /* NotificationUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationUtils.swift; sourceTree = "<group>"; };
+		84E7FF8821A4E98F00120E32 /* NSButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSButtonExtension.swift; sourceTree = "<group>"; };
+		84E7FF8921A4E98F00120E32 /* NSDataUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDataUtils.swift; sourceTree = "<group>"; };
+		84E7FF8A21A4E98F00120E32 /* NSError+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Helper.h"; sourceTree = "<group>"; };
+		84E7FF8B21A4E98F00120E32 /* NSError+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+Helper.m"; sourceTree = "<group>"; };
+		84E7FF8C21A4E98F00120E32 /* RegexUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexUtils.swift; sourceTree = "<group>"; };
+		84E7FF8D21A4E98F00120E32 /* StringCrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringCrypt.swift; sourceTree = "<group>"; };
+		84E7FF8E21A4E98F00120E32 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		84E7FF9221A4E98F00120E32 /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		84E7FFA521A4E98F00120E32 /* menu_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon.png; sourceTree = "<group>"; };
+		84E7FFA621A4E98F00120E32 /* menu_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_icon@2x.png"; sourceTree = "<group>"; };
+		84E7FFA721A4E98F00120E32 /* menu_icon_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon_disabled.png; sourceTree = "<group>"; };
+		84E7FFA821A4E98F00120E32 /* menu_icon_disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_icon_disabled@2x.png"; sourceTree = "<group>"; };
+		84E7FFC021A4E99000120E32 /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		84E7FFC121A4E99000120E32 /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		886218EE1FBEDDAA002FA60A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		886218EF1FBEDDAA002FA60A /* AppGo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppGo-Bridging-Header.h"; sourceTree = "<group>"; };
+		886218F01FBEDDAA002FA60A /* AppGo.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = AppGo.entitlements; sourceTree = "<group>"; };
+		886218F11FBEDDAA002FA60A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		886218F91FBEDDAA002FA60A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		886219191FBEDDAA002FA60A /* AppGo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AppGo-Info.plist"; sourceTree = "<group>"; };
+		886219641FBEDDAA002FA60A /* SWBApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWBApplication.h; sourceTree = "<group>"; };
+		886219651FBEDDAA002FA60A /* SWBApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWBApplication.m; sourceTree = "<group>"; };
+		886219831FBEDDAA002FA60A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		88621A001FBEDE33002FA60A /* AppleScriptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptKit.framework; path = System/Library/Frameworks/AppleScriptKit.framework; sourceTree = SDKROOT; };
+		88621A021FBEDE3D002FA60A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9B0BFFE51D0460A70040E62B /* AppGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B3FFF3B1D08D93B0019A709 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		9B3FFF3D1D08D9910019A709 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9B6BF9531E27B2570061B9A7 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84CD00A321A4DD52008E9868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CD00B921A4DE24008E9868 /* NetworkExtension.framework in Frameworks */,
+				84CD00B321A4DDF5008E9868 /* CocoaAsyncSocket.framework in Frameworks */,
+				84CD00B421A4DDF8008E9868 /* CocoaLumberjack.framework in Frameworks */,
+				84C1910221A6BF6A0024D540 /* CocoaLumberjackSwift.framework in Frameworks */,
+				84CD00B621A4DDFC008E9868 /* PacketProcessor_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E7FEFA21A4E37B00120E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E7003721A4EBC100120E32 /* NetworkExtension.framework in Frameworks */,
+				84E7003021A4EB8F00120E32 /* CocoaLumberjackSwift.framework in Frameworks */,
+				84E7002C21A4EB8F00120E32 /* CocoaAsyncSocket.framework in Frameworks */,
+				84E7002E21A4EB8F00120E32 /* CocoaLumberjack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B0BFFE21D0460A70040E62B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E7005321A5948000120E32 /* StoreKit.framework in Frameworks */,
+				84B6879721A4CC88009D7CED /* Alamofire.framework in Frameworks */,
+				84B6878C21A4CB60009D7CED /* CryptoSwift.framework in Frameworks */,
+				84B6877321A4CB5D009D7CED /* CocoaLumberjack.framework in Frameworks */,
+				84B6877221A4CB5D009D7CED /* CocoaAsyncSocket.framework in Frameworks */,
+				84B6877421A4CB5D009D7CED /* CocoaLumberjackSwift.framework in Frameworks */,
+				84275BFF21AAF40A00FF257A /* PacketProcessor_macOS.framework in Frameworks */,
+				84B6878B21A4CB60009D7CED /* Sentry.framework in Frameworks */,
+				84B6879221A4CB60009D7CED /* ProgressKit.framework in Frameworks */,
+				84CD00BA21A4DE2A008E9868 /* NetworkExtension.framework in Frameworks */,
+				84E7005121A5945200120E32 /* SystemConfiguration.framework in Frameworks */,
+				84E7005021A5941500120E32 /* ServiceManagement.framework in Frameworks */,
+				84E7005421A5949200120E32 /* WebKit.framework in Frameworks */,
+				84E7005221A5946800120E32 /* AppleScriptKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84CD00A721A4DD52008E9868 /* VpnExtension */ = {
+			isa = PBXGroup;
+			children = (
+				84CD00AA21A4DD52008E9868 /* VpnExtension-Info.plist */,
+				84CD00AB21A4DD52008E9868 /* VpnExtension.entitlements */,
+			);
+			path = VpnExtension;
+			sourceTree = "<group>";
+		};
+		84E7000C21A4EA9400120E32 /* Vpn */ = {
+			isa = PBXGroup;
+			children = (
+				84E7001421A4EA9400120E32 /* Shadowsocks.h */,
+				84E7001521A4EA9400120E32 /* Shadowsocks.m */,
+				84E7001221A4EA9400120E32 /* PacketTunnelProvider.h */,
+				84E7001321A4EA9400120E32 /* PacketTunnelProvider.m */,
+				84E7000D21A4EA9400120E32 /* AppGoConnection.swift */,
+				84E7000E21A4EA9400120E32 /* AppGoConnectionStore.swift */,
+				84E7000F21A4EA9400120E32 /* AppGoConnectivity.swift */,
+				84E7001021A4EA9400120E32 /* AppGoSentryLogger.swift */,
+				84E7001121A4EA9400120E32 /* AppGoVpn.swift */,
+				84E7001621A4EA9400120E32 /* Subnet.swift */,
+				84E7001721A4EA9400120E32 /* VpnManager.swift */,
+			);
+			path = Vpn;
+			sourceTree = "<group>";
+		};
+		84E7FEFE21A4E37B00120E32 /* AppGoLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				84E7FF0821A4E37E00120E32 /* AppGoLauncher-Info.plist */,
+				84E7FF0921A4E37E00120E32 /* AppGoLauncher.entitlements */,
+				84E7FF0521A4E37D00120E32 /* Main.storyboard */,
+				84E7FEFF21A4E37B00120E32 /* AppDelegate.swift */,
+			);
+			path = AppGoLauncher;
+			sourceTree = "<group>";
+		};
+		84E7FF2D21A4E59B00120E32 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				84E7FF7A21A4E98F00120E32 /* Base */,
+				84E7FF6621A4E98F00120E32 /* Model */,
+				84E7FF7721A4E98F00120E32 /* Language */,
+				84E7FFBF21A4E99000120E32 /* Ping */,
+				84E7000C21A4EA9400120E32 /* Vpn */,
+				84E7FFA121A4E98F00120E32 /* Resource */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		84E7FF3A21A4E80000120E32 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				84E7005721A5A54E00120E32 /* AGWindow.swift */,
+				84E7FF3B21A4E80000120E32 /* AGMainWindowController.swift */,
+				84E7FF3C21A4E80000120E32 /* AGNavigationController.swift */,
+				84E7FF3D21A4E80000120E32 /* BaseViewController.swift */,
+				84E7FF3E21A4E80000120E32 /* ToastWindowController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		84E7FF3F21A4E80000120E32 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				84E7FF4121A4E80000120E32 /* AGLoginViewController.swift */,
+				84E7FF4021A4E80000120E32 /* AGForgotPasswordViewController.swift */,
+				84E7FF4221A4E80000120E32 /* AGPhoneListViewController.swift */,
+				84E7FF4321A4E80000120E32 /* AGSignupViewController.swift */,
+				84273D0621C9405500424443 /* AGSplashViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		84E7FF4521A4E80000120E32 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				84E7FF4721A4E80000120E32 /* AGAccountViewController.swift */,
+				84E7FF4621A4E80000120E32 /* AGAboutUsViewController.swift */,
+				84E7FF4821A4E80000120E32 /* AGFeedbackViewController.swift */,
+				84E7FF4921A4E80000120E32 /* AGNotificationViewController.swift */,
+				84E7FF4A21A4E80000120E32 /* AGSettingsViewController.swift */,
+				84E7FF4B21A4E80000120E32 /* AGTermOfUseViewController.swift */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		84E7FF4C21A4E80100120E32 /* Run */ = {
+			isa = PBXGroup;
+			children = (
+				84E7FF4D21A4E80100120E32 /* AGMainViewController.swift */,
+				84E7FF4E21A4E80100120E32 /* AGServerSelectionViewController.swift */,
+			);
+			path = Run;
+			sourceTree = "<group>";
+		};
+		84E7FF4F21A4E80100120E32 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				84E7FF5121A4E80100120E32 /* AGShopViewController.swift */,
+				84E7FF5021A4E80100120E32 /* AGAlipayViewController.swift */,
+				84222AF621C2975D008E1214 /* IAPManager.swift */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		84E7FF6621A4E98F00120E32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84A55A6B21B26A560086A2CA /* AppInfo.swift */,
+				84E7FF6721A4E98F00120E32 /* API.swift */,
+				84E7FF6821A4E98F00120E32 /* AppPref.swift */,
+				84E7FF6C21A4E98F00120E32 /* MCountry.swift */,
+				84E7FF6D21A4E98F00120E32 /* MPackage.swift */,
+				84E7FF6E21A4E98F00120E32 /* MPush.swift */,
+				84E7FF7021A4E98F00120E32 /* MService.swift */,
+				84E7FF7121A4E98F00120E32 /* MSms.swift */,
+				84E7FF7221A4E98F00120E32 /* MUser.swift */,
+				84E7FF7321A4E98F00120E32 /* MVersion.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84E7FF7721A4E98F00120E32 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				84E7FF7821A4E98F00120E32 /* CountryManager.swift */,
+				84E7FF7921A4E98F00120E32 /* Localized.swift */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		84E7FF7A21A4E98F00120E32 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				84E7FF7B21A4E98F00120E32 /* AGImageView.swift */,
+				84E7FF7C21A4E98F00120E32 /* AlertUtils.swift */,
+				84E7FF7E21A4E98F00120E32 /* CastUtils.swift */,
+				84E7FF7F21A4E98F00120E32 /* ColorUtils.swift */,
+				84E7FF8021A4E98F00120E32 /* CommonUtils.swift */,
+				84E7FF8321A4E98F00120E32 /* JSONUtils.h */,
+				84E7FF8421A4E98F00120E32 /* JSONUtils.m */,
+				84E7FF8521A4E98F00120E32 /* KeychainItemWrapper.swift */,
+				84E7FF8621A4E98F00120E32 /* LoggerUtils.swift */,
+				84E7FF8721A4E98F00120E32 /* NotificationUtils.swift */,
+				84E7FF8821A4E98F00120E32 /* NSButtonExtension.swift */,
+				84E7FF8921A4E98F00120E32 /* NSDataUtils.swift */,
+				84E7FF8A21A4E98F00120E32 /* NSError+Helper.h */,
+				84E7FF8B21A4E98F00120E32 /* NSError+Helper.m */,
+				84E7FF8C21A4E98F00120E32 /* RegexUtils.swift */,
+				84E7FF8D21A4E98F00120E32 /* StringCrypt.swift */,
+				84E7FF8E21A4E98F00120E32 /* UIHelper.swift */,
+				84E7FF9221A4E98F00120E32 /* ViewExtension.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		84E7FFA121A4E98F00120E32 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				84E7FFA521A4E98F00120E32 /* menu_icon.png */,
+				84E7FFA621A4E98F00120E32 /* menu_icon@2x.png */,
+				84E7FFA721A4E98F00120E32 /* menu_icon_disabled.png */,
+				84E7FFA821A4E98F00120E32 /* menu_icon_disabled@2x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		84E7FFBF21A4E99000120E32 /* Ping */ = {
+			isa = PBXGroup;
+			children = (
+				84E7FFC021A4E99000120E32 /* SimplePing.h */,
+				84E7FFC121A4E99000120E32 /* SimplePing.m */,
+			);
+			path = Ping;
+			sourceTree = "<group>";
+		};
+		886218ED1FBEDDAA002FA60A /* AppGo */ = {
+			isa = PBXGroup;
+			children = (
+				886218F01FBEDDAA002FA60A /* AppGo.entitlements */,
+				886219191FBEDDAA002FA60A /* AppGo-Info.plist */,
+				847F3BDB21AAE2A1009D0CF4 /* CommandLine.entitlements */,
+				886218F81FBEDDAA002FA60A /* Localizable.strings */,
+				84C0A9D921B1FB950086F6A2 /* Main.storyboard */,
+				8493ECE621B25C6E005F3C1B /* ToastWindowController.xib */,
+				886218F11FBEDDAA002FA60A /* Assets.xcassets */,
+				886218EF1FBEDDAA002FA60A /* AppGo-Bridging-Header.h */,
+				886218EE1FBEDDAA002FA60A /* AppDelegate.swift */,
+				886219641FBEDDAA002FA60A /* SWBApplication.h */,
+				886219651FBEDDAA002FA60A /* SWBApplication.m */,
+				84E7FF3A21A4E80000120E32 /* Base */,
+				84E7FF3F21A4E80000120E32 /* Login */,
+				84E7FF4C21A4E80100120E32 /* Run */,
+				84E7FF4F21A4E80100120E32 /* Shop */,
+				84E7FF4521A4E80000120E32 /* Me */,
+			);
+			path = AppGo;
+			sourceTree = "<group>";
+		};
+		9B0BFFDC1D0460A70040E62B = {
+			isa = PBXGroup;
+			children = (
+				886218ED1FBEDDAA002FA60A /* AppGo */,
+				84CD00A721A4DD52008E9868 /* VpnExtension */,
+				84E7FEFE21A4E37B00120E32 /* AppGoLauncher */,
+				84E7FF2D21A4E59B00120E32 /* Share */,
+				9B0BFFE61D0460A70040E62B /* Products */,
+				D3CE66CC039F651F28057DDB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9B0BFFE61D0460A70040E62B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B0BFFE51D0460A70040E62B /* AppGo.app */,
+				84CD00A621A4DD52008E9868 /* VpnExtension.appex */,
+				84E7FEFD21A4E37B00120E32 /* AppGoLauncher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3CE66CC039F651F28057DDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84CD00B821A4DE24008E9868 /* NetworkExtension.framework */,
+				84B6877D21A4CB5E009D7CED /* CryptoSwift.framework */,
+				84B6877921A4CB5D009D7CED /* GCDWebServer.framework */,
+				84B6878421A4CB60009D7CED /* libBRLOptionParser.a */,
+				84B6878221A4CB5F009D7CED /* libPods-proxy_conf_helper.a */,
+				84B6877721A4CB5D009D7CED /* MASShortcut.bundle */,
+				84B6878121A4CB5F009D7CED /* MASShortcut.framework */,
+				84B6878321A4CB5F009D7CED /* ProgressKit.framework */,
+				84B6877F21A4CB5F009D7CED /* proxy_conf_helper */,
+				84B6877E21A4CB5E009D7CED /* RxCocoa.framework */,
+				84B6877821A4CB5D009D7CED /* RxSwift.framework */,
+				84B6877C21A4CB5E009D7CED /* Sentry.framework */,
+				84B6876921A4CB2F009D7CED /* Alamofire.framework */,
+				84B6876621A4CB2F009D7CED /* CocoaAsyncSocket.framework */,
+				84B6876721A4CB2F009D7CED /* CocoaLumberjack.framework */,
+				84B6876A21A4CB2F009D7CED /* CocoaLumberjackSwift.framework */,
+				84B6876821A4CB2F009D7CED /* Shadowsocks_macOS.framework */,
+				84B6876521A4CB2F009D7CED /* PacketProcessor_macOS.framework */,
+				88621A021FBEDE3D002FA60A /* StoreKit.framework */,
+				88621A001FBEDE33002FA60A /* AppleScriptKit.framework */,
+				9B6BF9531E27B2570061B9A7 /* ServiceManagement.framework */,
+				9B3FFF3D1D08D9910019A709 /* SystemConfiguration.framework */,
+				9B3FFF3B1D08D93B0019A709 /* WebKit.framework */,
+				1E7783AEDB4A3BDDC9FF16AC /* libPods-proxy_conf_helper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84CD00A521A4DD52008E9868 /* VpnExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CD00AF21A4DD52008E9868 /* Build configuration list for PBXNativeTarget "VpnExtension" */;
+			buildPhases = (
+				84CD00A221A4DD52008E9868 /* Sources */,
+				84CD00A321A4DD52008E9868 /* Frameworks */,
+				84CD00A421A4DD52008E9868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VpnExtension;
+			productName = VpnExtension;
+			productReference = 84CD00A621A4DD52008E9868 /* VpnExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		84E7FEFC21A4E37B00120E32 /* AppGoLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84E7FF2021A4E37E00120E32 /* Build configuration list for PBXNativeTarget "AppGoLauncher" */;
+			buildPhases = (
+				84E7FEF921A4E37B00120E32 /* Sources */,
+				84E7FEFA21A4E37B00120E32 /* Frameworks */,
+				84E7FEFB21A4E37B00120E32 /* Resources */,
+				84E7003621A4EB8F00120E32 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppGoLauncher;
+			productName = AppGoLauncher;
+			productReference = 84E7FEFD21A4E37B00120E32 /* AppGoLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B0BFFE41D0460A70040E62B /* AppGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B0B00081D0460A70040E62B /* Build configuration list for PBXNativeTarget "AppGo" */;
+			buildPhases = (
+				9B0BFFE11D0460A70040E62B /* Sources */,
+				9B0BFFE21D0460A70040E62B /* Frameworks */,
+				9B0BFFE31D0460A70040E62B /* Resources */,
+				9B6BF9511E27B2250061B9A7 /* CopyFiles */,
+				84B6879921A4CC88009D7CED /* Embed Frameworks */,
+				84CD00B221A4DD52008E9868 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84CD00AD21A4DD52008E9868 /* PBXTargetDependency */,
+				84E7FF2B21A4E3FC00120E32 /* PBXTargetDependency */,
+			);
+			name = AppGo;
+			productName = "ShadowsocksX-NG";
+			productReference = 9B0BFFE51D0460A70040E62B /* AppGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B0BFFDD1D0460A70040E62B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = AppGo;
+				TargetAttributes = {
+					84CD00A521A4DD52008E9868 = {
+						CreatedOnToolsVersion = 9.4.1;
+						DevelopmentTeam = 3W5J6994PB;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+					84E7FEFC21A4E37B00120E32 = {
+						CreatedOnToolsVersion = 9.4.1;
+						DevelopmentTeam = 3W5J6994PB;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					9B0BFFE41D0460A70040E62B = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 3W5J6994PB;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 9B0BFFE01D0460A70040E62B /* Build configuration list for PBXProject "AppGo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 9B0BFFDC1D0460A70040E62B;
+			productRefGroup = 9B0BFFE61D0460A70040E62B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B0BFFE41D0460A70040E62B /* AppGo */,
+				84CD00A521A4DD52008E9868 /* VpnExtension */,
+				84E7FEFC21A4E37B00120E32 /* AppGoLauncher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84CD00A421A4DD52008E9868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E7FEFB21A4E37B00120E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E7FF0721A4E37D00120E32 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B0BFFE31D0460A70040E62B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E7004B21A5666700120E32 /* menu_icon.png in Resources */,
+				84E7004C21A5666700120E32 /* menu_icon@2x.png in Resources */,
+				84E7004D21A5666700120E32 /* menu_icon_disabled.png in Resources */,
+				84E7004E21A5666700120E32 /* menu_icon_disabled@2x.png in Resources */,
+				84C0A9DB21B1FB950086F6A2 /* Main.storyboard in Resources */,
+				8493ECE721B25C6F005F3C1B /* ToastWindowController.xib in Resources */,
+				886219851FBEDDAA002FA60A /* Assets.xcassets in Resources */,
+				84E7FF2C21A4E49400120E32 /* AppGoLauncher.app in Resources */,
+				886219A41FBEDDAA002FA60A /* AppGo-Info.plist in Resources */,
+				886219881FBEDDAA002FA60A /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84CD00A221A4DD52008E9868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E7004221A55E3300120E32 /* NotificationUtils.swift in Sources */,
+				84E7002721A4EAB900120E32 /* Shadowsocks.m in Sources */,
+				84E7002821A4EABD00120E32 /* Subnet.swift in Sources */,
+				84E7002621A4EAB500120E32 /* PacketTunnelProvider.m in Sources */,
+				84A55A6D21B26A560086A2CA /* AppInfo.swift in Sources */,
+				84E7003B21A4EC3400120E32 /* AppGoConnectionStore.swift in Sources */,
+				84E7003A21A4EC2800120E32 /* AppGoConnection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84E7FEF921A4E37B00120E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E7004321A55E3400120E32 /* NotificationUtils.swift in Sources */,
+				84E7003C21A4EC4A00120E32 /* AppGoSentryLogger.swift in Sources */,
+				84E7003F21A5203300120E32 /* AppGoConnectionStore.swift in Sources */,
+				84E7003921A4EC0800120E32 /* AppGoConnectivity.swift in Sources */,
+				84A55A6E21B26A560086A2CA /* AppInfo.swift in Sources */,
+				84E7FF0021A4E37B00120E32 /* AppDelegate.swift in Sources */,
+				84E7002121A4EAA000120E32 /* AppGoConnection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B0BFFE11D0460A70040E62B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84222AF721C2975D008E1214 /* IAPManager.swift in Sources */,
+				84E7FFDB21A4E99000120E32 /* KeychainItemWrapper.swift in Sources */,
+				84E7FF5B21A4E80100120E32 /* AGAccountViewController.swift in Sources */,
+				84E7FF5421A4E80100120E32 /* BaseViewController.swift in Sources */,
+				84E7FFD321A4E99000120E32 /* AGImageView.swift in Sources */,
+				84E7FFC821A4E99000120E32 /* MPush.swift in Sources */,
+				84E7FFE321A4E99000120E32 /* UIHelper.swift in Sources */,
+				84E7002021A4EA9400120E32 /* VpnManager.swift in Sources */,
+				84E7FFCC21A4E99000120E32 /* MUser.swift in Sources */,
+				84E7FFCB21A4E99000120E32 /* MSms.swift in Sources */,
+				886219E61FBEDDAA002FA60A /* SWBApplication.m in Sources */,
+				84E7FF5621A4E80100120E32 /* AGForgotPasswordViewController.swift in Sources */,
+				84E7FFD421A4E99000120E32 /* AlertUtils.swift in Sources */,
+				886219841FBEDDAA002FA60A /* AppDelegate.swift in Sources */,
+				84E7FFDC21A4E99000120E32 /* LoggerUtils.swift in Sources */,
+				84E7FF5221A4E80100120E32 /* AGMainWindowController.swift in Sources */,
+				84E7FFE621A4E99000120E32 /* ViewExtension.swift in Sources */,
+				84E7FFCA21A4E99000120E32 /* MService.swift in Sources */,
+				84273D0721C9405500424443 /* AGSplashViewController.swift in Sources */,
+				84E7005821A5A54E00120E32 /* AGWindow.swift in Sources */,
+				84E7FF6121A4E80100120E32 /* AGServerSelectionViewController.swift in Sources */,
+				84E7FF6221A4E80100120E32 /* AGAlipayViewController.swift in Sources */,
+				84E7FFD121A4E99000120E32 /* CountryManager.swift in Sources */,
+				84E7FFE021A4E99000120E32 /* NSError+Helper.m in Sources */,
+				84E7FF5321A4E80100120E32 /* AGNavigationController.swift in Sources */,
+				84E7FFDF21A4E99000120E32 /* NSDataUtils.swift in Sources */,
+				84E7FFDA21A4E99000120E32 /* JSONUtils.m in Sources */,
+				84E7FFD221A4E99000120E32 /* Localized.swift in Sources */,
+				84E7FF5821A4E80100120E32 /* AGPhoneListViewController.swift in Sources */,
+				84E7FFD621A4E99000120E32 /* ColorUtils.swift in Sources */,
+				84E7FFE121A4E99000120E32 /* RegexUtils.swift in Sources */,
+				84E7FF5E21A4E80100120E32 /* AGSettingsViewController.swift in Sources */,
+				84E7FF5721A4E80100120E32 /* AGLoginViewController.swift in Sources */,
+				84E7FF5A21A4E80100120E32 /* AGAboutUsViewController.swift in Sources */,
+				84E7FFC621A4E99000120E32 /* MCountry.swift in Sources */,
+				84E7FFC221A4E99000120E32 /* API.swift in Sources */,
+				84E7FF5F21A4E80100120E32 /* AGTermOfUseViewController.swift in Sources */,
+				84E7FF5921A4E80100120E32 /* AGSignupViewController.swift in Sources */,
+				84E7FFC721A4E99000120E32 /* MPackage.swift in Sources */,
+				84E7FFDE21A4E99000120E32 /* NSButtonExtension.swift in Sources */,
+				84E7FF5D21A4E80100120E32 /* AGNotificationViewController.swift in Sources */,
+				84E7FF5C21A4E80100120E32 /* AGFeedbackViewController.swift in Sources */,
+				84A55A6C21B26A560086A2CA /* AppInfo.swift in Sources */,
+				84E7001B21A4EA9400120E32 /* AppGoSentryLogger.swift in Sources */,
+				84E7FF5521A4E80100120E32 /* ToastWindowController.swift in Sources */,
+				84E7000B21A4E99000120E32 /* SimplePing.m in Sources */,
+				84E7FF6321A4E80100120E32 /* AGShopViewController.swift in Sources */,
+				84E7FFCD21A4E99000120E32 /* MVersion.swift in Sources */,
+				84E7001A21A4EA9400120E32 /* AppGoConnectivity.swift in Sources */,
+				84E7FFE221A4E99000120E32 /* StringCrypt.swift in Sources */,
+				84E7FFC321A4E99000120E32 /* AppPref.swift in Sources */,
+				84E7FFDD21A4E99000120E32 /* NotificationUtils.swift in Sources */,
+				84E7001821A4EA9400120E32 /* AppGoConnection.swift in Sources */,
+				84E7FFD521A4E99000120E32 /* CastUtils.swift in Sources */,
+				84E7004021A5205A00120E32 /* AppGoVpn.swift in Sources */,
+				84E7FFD721A4E99000120E32 /* CommonUtils.swift in Sources */,
+				84E7FF6021A4E80100120E32 /* AGMainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84CD00AD21A4DD52008E9868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84CD00A521A4DD52008E9868 /* VpnExtension */;
+			targetProxy = 84CD00AC21A4DD52008E9868 /* PBXContainerItemProxy */;
+		};
+		84E7FF2B21A4E3FC00120E32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84E7FEFC21A4E37B00120E32 /* AppGoLauncher */;
+			targetProxy = 84E7FF2A21A4E3FC00120E32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84C0A9D921B1FB950086F6A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C0A9DA21B1FB950086F6A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84E7FF0521A4E37D00120E32 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84E7FF0621A4E37D00120E32 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		886218F81FBEDDAA002FA60A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				886218F91FBEDDAA002FA60A /* Base */,
+				886219831FBEDDAA002FA60A /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84CD00B021A4DD52008E9868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = VpnExtension/VpnExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/VpnExtension/VpnExtension-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appgo.macos.VpnExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		84CD00B121A4DD52008E9868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = VpnExtension/VpnExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/VpnExtension/VpnExtension-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appgo.macos.VpnExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		84E7FF2121A4E37E00120E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = AppGoLauncher/AppGoLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/AppGoLauncher/AppGoLauncher-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appgo.macos.AppGoLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		84E7FF2221A4E37E00120E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = AppGoLauncher/AppGoLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/AppGoLauncher/AppGoLauncher-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appgo.macos.AppGoLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9B0B00061D0460A70040E62B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9B0B00071D0460A70040E62B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		9B0B00091D0460A70040E62B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AppGo/AppGo.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/libcork/include/",
+					"$(SRCROOT)/libipset/include/",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/AppGo/AppGo-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+					"$(PROJECT_DIR)/AppGO",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appgo.macos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppGo/AppGo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9B0B000A1D0460A70040E62B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AppGo/AppGo.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/libcork/include/",
+					"$(SRCROOT)/libipset/include/",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/AppGo/AppGo-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+					"$(PROJECT_DIR)/AppGO",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appgo.macos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppGo/AppGo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84CD00AF21A4DD52008E9868 /* Build configuration list for PBXNativeTarget "VpnExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CD00B021A4DD52008E9868 /* Debug */,
+				84CD00B121A4DD52008E9868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84E7FF2021A4E37E00120E32 /* Build configuration list for PBXNativeTarget "AppGoLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E7FF2121A4E37E00120E32 /* Debug */,
+				84E7FF2221A4E37E00120E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B0B00081D0460A70040E62B /* Build configuration list for PBXNativeTarget "AppGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B0B00091D0460A70040E62B /* Debug */,
+				9B0B000A1D0460A70040E62B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B0BFFE01D0460A70040E62B /* Build configuration list for PBXProject "AppGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B0B00061D0460A70040E62B /* Debug */,
+				9B0B00071D0460A70040E62B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B0BFFDD1D0460A70040E62B /* Project object */;
+}

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D5b-XV-L95"/>
+                        <viewControllerLayoutGuide type="bottom" id="trp-gr-WXV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" id="Q3I-OF-s6r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bEW-2f-hnX">
+                                <rect key="frame" x="0.0" y="19.999999999999972" width="414" height="478.33333333333326"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_appicon_circle" translatesAutoresizingMaskIntoConstraints="NO" id="Aas-bs-QZS">
+                                        <rect key="frame" x="155.33333333333334" y="44.333333333333321" width="103.33333333333334" height="103.66666666666669"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Aas-bs-QZS" secondAttribute="height" id="FUL-Jn-dGP"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_appname_blue" translatesAutoresizingMaskIntoConstraints="NO" id="UXV-0P-y62">
+                                        <rect key="frame" x="104.66666666666667" y="148" width="206.33333333333331" height="136"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fast Track to the World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAN-qj-aaf">
+                                        <rect key="frame" x="113.66666666666669" y="304" width="187" height="21.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.34509803921568627" green="0.7803921568627451" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="sAN-qj-aaf" firstAttribute="top" secondItem="UXV-0P-y62" secondAttribute="bottom" constant="20" id="34J-Ub-z7t"/>
+                                    <constraint firstItem="sAN-qj-aaf" firstAttribute="centerX" secondItem="bEW-2f-hnX" secondAttribute="centerX" id="MNh-9N-JzT"/>
+                                    <constraint firstItem="UXV-0P-y62" firstAttribute="width" secondItem="Aas-bs-QZS" secondAttribute="width" multiplier="2" id="QgZ-hU-0ls"/>
+                                    <constraint firstItem="Aas-bs-QZS" firstAttribute="width" secondItem="bEW-2f-hnX" secondAttribute="width" multiplier="0.25" id="XdT-fv-6aN"/>
+                                    <constraint firstItem="Aas-bs-QZS" firstAttribute="centerY" secondItem="bEW-2f-hnX" secondAttribute="centerY" multiplier="0.4" id="eJ8-4x-SLv"/>
+                                    <constraint firstItem="Aas-bs-QZS" firstAttribute="centerX" secondItem="bEW-2f-hnX" secondAttribute="centerX" id="pom-40-gFe"/>
+                                    <constraint firstItem="UXV-0P-y62" firstAttribute="centerX" secondItem="bEW-2f-hnX" secondAttribute="centerX" id="qXC-os-7XU"/>
+                                    <constraint firstItem="UXV-0P-y62" firstAttribute="top" secondItem="Aas-bs-QZS" secondAttribute="bottom" id="uXZ-im-TGS"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fD6-5R-QbP">
+                                <rect key="frame" x="0.0" y="498.33333333333331" width="414" height="237.66666666666669"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="im_back_wave" translatesAutoresizingMaskIntoConstraints="NO" id="hBd-w2-sCH">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="237.33333333333334"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_version_blue" translatesAutoresizingMaskIntoConstraints="NO" id="F5e-ZE-XaV">
+                                        <rect key="frame" x="145" y="160.33333333333331" width="124.66666666666669" height="36"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright@2016-2018 AppGo All Rights Reserved" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZ9-yp-3C4">
+                                        <rect key="frame" x="56" y="196.33333333333331" width="303.66666666666669" height="41.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.34509803921568627" green="0.7803921568627451" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="F5e-ZE-XaV" firstAttribute="centerY" secondItem="fD6-5R-QbP" secondAttribute="centerY" multiplier="1.5" id="0nG-HQ-Eu2"/>
+                                    <constraint firstItem="hBd-w2-sCH" firstAttribute="leading" secondItem="fD6-5R-QbP" secondAttribute="leading" id="2W0-pe-GSD"/>
+                                    <constraint firstAttribute="bottom" secondItem="hBd-w2-sCH" secondAttribute="bottom" id="C4h-n6-YI0"/>
+                                    <constraint firstAttribute="trailing" secondItem="hBd-w2-sCH" secondAttribute="trailing" id="GXS-9I-vDY"/>
+                                    <constraint firstAttribute="bottom" secondItem="yZ9-yp-3C4" secondAttribute="bottom" id="KR0-Jd-exe"/>
+                                    <constraint firstItem="F5e-ZE-XaV" firstAttribute="width" secondItem="fD6-5R-QbP" secondAttribute="width" multiplier="0.3" id="f6r-EY-F49"/>
+                                    <constraint firstItem="F5e-ZE-XaV" firstAttribute="centerX" secondItem="fD6-5R-QbP" secondAttribute="centerX" id="glh-U3-ees"/>
+                                    <constraint firstItem="hBd-w2-sCH" firstAttribute="top" secondItem="fD6-5R-QbP" secondAttribute="top" id="mEn-1g-1xV"/>
+                                    <constraint firstItem="yZ9-yp-3C4" firstAttribute="centerX" secondItem="fD6-5R-QbP" secondAttribute="centerX" id="qFk-6a-SJo"/>
+                                    <constraint firstItem="yZ9-yp-3C4" firstAttribute="top" secondItem="F5e-ZE-XaV" secondAttribute="bottom" id="zqq-wb-Xbz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bEW-2f-hnX" secondAttribute="trailing" id="0Mq-H2-gJ8"/>
+                            <constraint firstItem="trp-gr-WXV" firstAttribute="top" secondItem="fD6-5R-QbP" secondAttribute="bottom" id="1LH-zf-LGK"/>
+                            <constraint firstItem="bEW-2f-hnX" firstAttribute="top" secondItem="D5b-XV-L95" secondAttribute="bottom" id="9ZB-mg-a25"/>
+                            <constraint firstItem="bEW-2f-hnX" firstAttribute="leading" secondItem="Q3I-OF-s6r" secondAttribute="leading" id="9lR-TD-X4p"/>
+                            <constraint firstItem="fD6-5R-QbP" firstAttribute="top" secondItem="bEW-2f-hnX" secondAttribute="bottom" id="OYK-1j-v6Y"/>
+                            <constraint firstAttribute="trailing" secondItem="fD6-5R-QbP" secondAttribute="trailing" id="Qmh-78-dWO"/>
+                            <constraint firstItem="bEW-2f-hnX" firstAttribute="height" secondItem="Q3I-OF-s6r" secondAttribute="height" multiplier="0.65" id="XBl-jI-SHz"/>
+                            <constraint firstItem="fD6-5R-QbP" firstAttribute="leading" secondItem="Q3I-OF-s6r" secondAttribute="leading" id="o6j-sV-y4f"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="449.99999999999994" y="419.91215226939966"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_appicon_circle" width="200" height="200"/>
+        <image name="ic_appname_blue" width="1050" height="136"/>
+        <image name="ic_version_blue" width="265" height="36"/>
+        <image name="im_back_wave" width="2048" height="1144"/>
+    </resources>
+</document>

@@ -1,0 +1,11 @@
+framework module ProgressKit {
+  umbrella header "ProgressKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module ProgressKit.Swift {
+    header "ProgressKit-Swift.h"
+    requires objc
+}

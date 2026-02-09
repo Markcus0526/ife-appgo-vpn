@@ -1,0 +1,11 @@
+framework module CallbackURLKit {
+  umbrella header "CallbackURLKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module CallbackURLKit.Swift {
+    header "CallbackURLKit-Swift.h"
+    requires objc
+}
