@@ -59,6 +59,16 @@ Quick mapping:
 
 ---
 
+## 🛡️ Security & Privacy Features
+- End-to-End Encryption: Implements industry-standard AES-256-GCM encryption to ensure all data remains private from ISPs and hackers.
+- Secure Tunneling Protocols: Supports high-performance protocols including WireGuard and OpenVPN for the best balance of speed and security.
+- Zero-Logs Policy: Designed with a strict no-logs architecture; the application does not monitor, record, or store any user activity or connection timestamps.
+- DNS Leak Protection: Built-in protection to prevent your ISP from seeing which websites you visit, even when the VPN is active.
+- Kill Switch: Automatically disconnects your device from the internet if the VPN connection drops, preventing accidental data exposure.
+- Obfuscation Technology: Features stealth mode to bypass firewalls and DPI (Deep Packet Inspection) in restricted network environments.
+
+---
+
 ## ⚙️ Quick Start — Build & Run (developer guide)
 
 General note: this is a large multi-project repo. The steps below are the minimal developer quickstarts (focused on local dev builds). See platform-specific module READMEs (android/README.md) for deeper detail.
