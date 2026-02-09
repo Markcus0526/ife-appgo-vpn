@@ -1,5 +1,14 @@
 # AppGo Multi‑Platform VPN Client 🛡️🌐
 
+[![License](https://img.shields.io)](https://github.com)
+[![Build Status](https://img.shields.io)](https://github.com)
+[![Repo Size](https://img.shields.io)](https://github.com)
+[![Last Commit](https://img.shields.io)](https://github.com/commits/main)
+
+**Secure. Private. High-Performance VPN Client.**
+
+[Report Bug](https://github.com/issues) · [Request Feature](https://github.com/issues)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) ![Platforms](https://img.shields.io/badge/Platforms-Android%20|%20iOS%20|%20macOS%20|%20Windows-brightgreen)
 
 > Cross-platform VPN client suite (Android, iOS, macOS, Windows) integrating Shadowsocks-based engines, tun2socks and platform packet processors. This repo contains platform-specific apps, native engines, helper libraries and build files.
