@@ -1,7 +1,5 @@
 # AppGo Multi‑Platform VPN Client 🛡️🌐
 
-# 🛡️ ife-appgo-vpn 
-
 A high-performance, cross-platform VPN client suite supporting Android, iOS, macOS, and Windows. This system focuses on bypassing restrictive network firewalls via low-overhead proxy protocols and custom network packet handling.
 
 ## 🚀 Core Architectural Features
@@ -15,7 +13,7 @@ A high-performance, cross-platform VPN client suite supporting Android, iOS, mac
 
 ---
 💼 **Looking to build custom privacy, proxy, or networking infrastructure?**  
-[Message me on Telegram](https://t.me) to hire me directly for your project. No platform KYC required.
+[Message me on Telegram](https://t.me/markcus0526) to hire me directly for your project. No platform KYC required.
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) ![Platforms](https://img.shields.io/badge/Platforms-Android%20|%20iOS%20|%20macOS%20|%20Windows-brightgreen)
